@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " ab",
+    " cd",
+    "e  "
+  ],
+  "key": {
+    "a": {
+      "item": "swissokyo_extension:zircon_knife"
+    },
+    "b": {
+      "item": "swissokyo_extension:tour_knife"
+    },
+    "c": {
+      "item": "swissokyo_extension:saphire_knife"
+    },
+    "d": {
+      "item": "swissokyo_extension:malach_knife"
+    },
+    "e": {
+      "item": "swissokyo_addons:netheriterod"
+    }
+  },
+  "result": {
+    "id": "swissokyo_extension:royale_knife",
+    "count": 1
+  }
+}

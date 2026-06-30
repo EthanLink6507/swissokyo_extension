@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "category": "equipment",
+  "template": {
+    "item": "swissokyo_addons:refined_talisman"
+  },
+  "base": {
+    "item": "swissokyo_extension:royale_knife"
+  },
+  "addition": {
+    "item": "swissokyo_extension:makai_ingot"
+  },
+  "result": {
+    "id": "swissokyo_extension:true_knife"
+  }
+}

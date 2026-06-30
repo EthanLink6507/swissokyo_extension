@@ -1,0 +1,24 @@
+{
+"type": "minecraft:crafting_shaped",
+"category": "misc",
+"pattern": [
+    " ca",
+    " bc",
+    "b  "
+],
+"key": {
+    "a": {
+    "item": "swissokyo_extension:makai_ingot"
+    },
+    "b": {
+    "item": "swissokyo_addons:netheriterod"
+    },
+    "c": {
+    "item": "swissokyo_addons:pearl"
+    }
+    },
+    "result": {
+    "id": "swissokyo_extension:remilia_spear",
+    "count": 1
+    }
+}

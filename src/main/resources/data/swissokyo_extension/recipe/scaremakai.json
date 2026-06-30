@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "block",
+  "pattern": [
+    "aa",
+    "bb",
+    "cc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:hay_block"
+    },
+    "b": {
+      "item": "swissokyo_addons:swissblock"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "swissokyo_extension:scaremakai",
+    "count": 1
+  }
+}

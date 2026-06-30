@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "swissokyo_extension:dark_talisman"
+  },
+  "base": {
+    "item": "swissokyo_addons:shogun_set_chestplate"
+  },
+  "addition": {
+    "item": "swissokyo_addons:shadow_pearl"
+  },
+  "result": {
+    "id": "swissokyo_addons:sks_armor_chestplate"
+  }
+}

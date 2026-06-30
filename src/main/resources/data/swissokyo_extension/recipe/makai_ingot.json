@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "bbb",
+    "bab",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "b": {
+      "item": "swissokyo_addons:shinaiawing"
+  }
+},
+  "result": {
+    "id": "swissokyo_extension:makai_ingot",
+    "count": 1
+  }
+}

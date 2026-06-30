@@ -1,0 +1,21 @@
+{
+"type": "minecraft:crafting_shaped",
+"category": "misc",
+"pattern": [
+    "aba",
+    "a a",
+    "aaa"
+],
+"key": {
+    "a": {
+    "item": "minecraft:coppe_ingot"
+    },
+    "b": {
+    "item": "minecraft:gold_ingot"
+    }
+},
+    "result": {
+    "id": "swissokyo_extension:piece",
+    "count": 1
+}
+}
