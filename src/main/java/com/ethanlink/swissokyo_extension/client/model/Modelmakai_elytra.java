@@ -29,6 +29,7 @@ public class Modelmakai_elytra<T extends Entity> extends EntityModel<T> {
         this.Waist = root.getChild("Waist");
 }
 
+    @SuppressWarnings("unused")
     public static LayerDefinition createBodyLayer() {
         MeshDefinition meshdefinition = new MeshDefinition();
         PartDefinition partdefinition = meshdefinition.getRoot();
@@ -41,9 +42,11 @@ public class Modelmakai_elytra<T extends Entity> extends EntityModel<T> {
         return LayerDefinition.create(meshdefinition, 100, 40);
     }
 
+    @Override
     public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 }
 
+    @Override
     public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, int rgb) {
         this.Body.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
         this.Waist.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);

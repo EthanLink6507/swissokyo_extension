@@ -24,7 +24,8 @@ import top.theillusivec4.curios.api.client.ICurioRenderer;
 
 public class MakaiElytracuriosRenderer implements ICurioRenderer {
 	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/makai_wings.png");
-  private final HumanoidModel humanoidModel;
+  @SuppressWarnings("rawtypes")
+private final HumanoidModel humanoidModel;
 
   @SuppressWarnings("rawtypes")
   public MakaiElytracuriosRenderer() {
@@ -40,6 +41,7 @@ public class MakaiElytracuriosRenderer implements ICurioRenderer {
         )));
 	}
 
+    @SuppressWarnings("unchecked")
     @Override
     public <T extends LivingEntity, M extends EntityModel<T>> void render(ItemStack stack,
 		SlotContext slotContext, PoseStack matrixStack, RenderLayerParent<T, M> renderLayerParent, MultiBufferSource renderTypeBuffer,

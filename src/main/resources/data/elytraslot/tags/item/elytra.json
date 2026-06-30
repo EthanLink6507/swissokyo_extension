@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-  "swissokyo_extension:makai_elytra"
-  ]
+    "minecraft:elytra",
+    {
+      "id": "swissokyo_extension:makai_elytra",
+      "required": false
+    }
+    ]
 }

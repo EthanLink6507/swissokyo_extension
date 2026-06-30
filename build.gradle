@@ -32,10 +32,6 @@ repositories {
         url = "https://maven.theillusivec4.top/"
     }
     maven {
-        name = "C4's Maven"
-        url = 'https://maven.theillusivec4.top/'
-    }
-    maven {
         name = "Jared's maven"
         url = "https://maven.blamejared.com/"
     }

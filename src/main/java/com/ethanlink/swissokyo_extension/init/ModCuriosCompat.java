@@ -12,6 +12,7 @@ public class ModCuriosCompat {
 			public ItemStack getStack() {
 				return stack;
 			}
-		}, ModItems.MAKAI_ELYTRA.get());
+		}, 
+		ModItems.MAKAI_ELYTRA.get());
 	}
 }

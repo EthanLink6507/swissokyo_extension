@@ -6,6 +6,7 @@ import com.ethanlink.swissokyo_extension.item.CoinItem;
 import com.ethanlink.swissokyo_extension.item.CoreKnifeItem;
 import com.ethanlink.swissokyo_extension.item.GarnKnifeItem;
 import com.ethanlink.swissokyo_extension.item.JaajKnifeItem;
+import com.ethanlink.swissokyo_extension.item.MakaiElytraItem;
 import com.ethanlink.swissokyo_extension.item.MakaiIngotItem;
 import com.ethanlink.swissokyo_extension.item.MakaiKnifeItem;
 import com.ethanlink.swissokyo_extension.item.MalachKnifeItem;
@@ -16,7 +17,8 @@ import com.ethanlink.swissokyo_extension.item.SwissKnifeItem;
 import com.ethanlink.swissokyo_extension.item.TourKnifeItem;
 import com.ethanlink.swissokyo_extension.item.TrueKnifeItem;
 import com.ethanlink.swissokyo_extension.item.ZirconKnifeItem;
-import com.ethanlink.swissokyo_extension.item.MakaiElytraItem;
+import com.ethanlink.swissokyo_extension.item.DarkTalismanItem;
+
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.Item;
@@ -45,6 +47,7 @@ public class ModItems {
 	public static final DeferredItem<Item> SCAREMAKAI;
 	public static final DeferredItem<Item> DONATION_BOX;
 	public static final DeferredItem<Item> MAKAI_ELYTRA;
+	public static final DeferredItem<Item> DARK_TALISMAN;
 
 private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {
     return ITEMS.register(block.getId().getPath(), () -> new BlockItem((Block)block.get(), new Item.Properties()));
@@ -70,7 +73,8 @@ private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block
 		ZIRCON_KNIFE = ITEMS.register("zircon_knife", ZirconKnifeItem::new);
 		MAKAI_INGOT = ITEMS.register("makai_ingot", MakaiIngotItem::new);
 		COIN = ITEMS.register("coin", CoinItem::new);
-		MAKAI_ELYTRA = ITEMS.register("makai_elytra", MakaiElytraItem::new);
+		MAKAI_ELYTRA = ITEMS.register("makai_elytra", MakaiElytraItem.Chestplate::new);
+		DARK_TALISMAN = ITEMS.register("dark_talisman", DarkTalismanItem::new);
 		SCAREMAKAI = doubleBlock(ModBlocks.SCAREMAKAI);
 		DONATION_BOX = block(ModBlocks.DONATION_BOX);
 		}

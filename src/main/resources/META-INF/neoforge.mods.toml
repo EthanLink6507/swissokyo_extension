@@ -47,6 +47,13 @@ description="Swissokyo Extension for Swissokyo Addons"
     side="BOTH"
 
     [[dependencies.swissokyo_extension]]
+    modId="elytraslot"
+    type="required"
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+    [[dependencies.swissokyo_extension]]
     modId="farmersdelight"
     type="required"
     versionRange="[0,)"
