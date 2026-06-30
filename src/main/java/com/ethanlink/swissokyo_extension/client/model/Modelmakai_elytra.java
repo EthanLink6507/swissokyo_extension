@@ -1,4 +1,4 @@
-package com.ethanlink.swissokyo_extension.model;
+package com.ethanlink.swissokyo_extension.client.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -16,7 +16,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 
 public class Modelmakai_elytra<T extends Entity> extends EntityModel<T> {
-    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("swissokyo_extention", "modelmakai_elytra"), "main");
+    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("swissokyo_extension", "modelmakai_elytra"), "main");
     public final ModelPart Body;
     public final ModelPart wingsR;
     public final ModelPart wingsL;
@@ -37,16 +37,13 @@ public class Modelmakai_elytra<T extends Entity> extends EntityModel<T> {
         wingsR.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-11.5F, -23.0F, 0.0F, 23.0F, 40.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0873F, 0.2182F, 0.0F));
         PartDefinition wingsL = Body.addOrReplaceChild("wingsL", CubeListBuilder.create(), PartPose.offset(-13.5F, 6.0F, 7.0F));
         wingsL.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 0).addBox(-11.5F, -23.0F, 0.0F, 23.0F, 40.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(27.0F, 0.0F, 0.0F, 3.0543F, 0.2182F, 3.1416F));
-        @SuppressWarnings("unused")
         PartDefinition Waist = partdefinition.addOrReplaceChild("Waist", CubeListBuilder.create(), PartPose.offset(0.0F, 12.0F, 0.0F));
         return LayerDefinition.create(meshdefinition, 100, 40);
     }
 
-    @SuppressWarnings("override")
     public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 }
 
-    @SuppressWarnings("override")
     public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, int rgb) {
         this.Body.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
         this.Waist.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);

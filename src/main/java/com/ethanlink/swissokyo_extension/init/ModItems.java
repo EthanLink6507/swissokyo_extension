@@ -16,6 +16,7 @@ import com.ethanlink.swissokyo_extension.item.SwissKnifeItem;
 import com.ethanlink.swissokyo_extension.item.TourKnifeItem;
 import com.ethanlink.swissokyo_extension.item.TrueKnifeItem;
 import com.ethanlink.swissokyo_extension.item.ZirconKnifeItem;
+import com.ethanlink.swissokyo_extension.item.MakaiElytraItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.Item;
@@ -43,6 +44,7 @@ public class ModItems {
 	public static final DeferredItem<Item> COIN;
 	public static final DeferredItem<Item> SCAREMAKAI;
 	public static final DeferredItem<Item> DONATION_BOX;
+	public static final DeferredItem<Item> MAKAI_ELYTRA;
 
 private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {
     return ITEMS.register(block.getId().getPath(), () -> new BlockItem((Block)block.get(), new Item.Properties()));
@@ -68,6 +70,7 @@ private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block
 		ZIRCON_KNIFE = ITEMS.register("zircon_knife", ZirconKnifeItem::new);
 		MAKAI_INGOT = ITEMS.register("makai_ingot", MakaiIngotItem::new);
 		COIN = ITEMS.register("coin", CoinItem::new);
+		MAKAI_ELYTRA = ITEMS.register("makai_elytra", MakaiElytraItem::new);
 		SCAREMAKAI = doubleBlock(ModBlocks.SCAREMAKAI);
 		DONATION_BOX = block(ModBlocks.DONATION_BOX);
 		}
