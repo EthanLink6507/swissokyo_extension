@@ -24,7 +24,6 @@ description="Swissokyo Extension for Swissokyo Addons"
     ordering="AFTER"
     side="BOTH"
 
-
 [[dependencies.swissokyo_extension]]
     modId="swissokyo_addons"
     type="required"
