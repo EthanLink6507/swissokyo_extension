@@ -1,0 +1,82 @@
+---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 2026-06-12 04:18:03
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Mod loading issue for: armorstatues --
+Details:
+	Mod file: /home/ethanlink/Swissokyo/run/mods/ArmorStatues-v21.1.0-1.21.1-NeoForge.jar
+	Failure message: Mod armorstatues requires puzzleslib 21.1.8 or above
+		Currently, puzzleslib is not installed
+		
+	Mod version: 21.1.0
+	Mod issues URL: https://github.com/Fuzss/armorstatues/issues
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: statuemenus --
+Details:
+	Mod file: /home/ethanlink/Swissokyo/run/mods/ArmorStatues-v21.1.0-1.21.1-NeoForge.jar#200!/META-INF/jars/statuemenus-neoforge-21.1.0.jar
+	Failure message: Mod statuemenus requires puzzleslib 21.1.8 or above
+		Currently, puzzleslib is not installed
+		
+	Mod version: 21.1.0
+	Mod issues URL: https://github.com/Fuzss/statuemenus/issues
+	Exception message: <No associated exception found>
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Linux (amd64) version 7.0.11-76070011-generic
+	Java Version: 21.0.11, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 238784144 bytes (227 MiB) / 704643072 bytes (672 MiB) up to 8380219392 bytes (7992 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+	Identifier: Intel64 Family 6 Model 158 Stepping 9
+	Microarchitecture: Kaby Lake
+	Frequency (GHz): 3.60
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: GA106 [GeForce RTX 3060 Lite Hash Rate]
+	Graphics card #0 vendor: NVIDIA Corporation (0x10de)
+	Graphics card #0 VRAM (MiB): 288.00
+	Graphics card #0 deviceId: 0x2504
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 36461.58
+	Virtual memory used (MiB): 13768.94
+	Swap memory total (MiB): 20479.49
+	Swap memory used (MiB): 807.68
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 165371.09, total: 470550.88
+	Space in storage for workdir (MiB): available: 165371.09, total: 470550.88
+	JVM Flags: 2 total; -Xrunjdwp:transport=dt_socket,address=localhost:44275,server=n,suspend=y -XX:+ShowCodeDetailsInExceptionMessages
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclientdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.42.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.42.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.42.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		kotlinforforge@5.9.0
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		neoforge-21.1.233.jar                             |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.233.jar                             |NeoForge                      |neoforge                      |21.1.233            |Manifest: NOSIGNATURE

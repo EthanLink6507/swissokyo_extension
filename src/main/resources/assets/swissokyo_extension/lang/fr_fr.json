@@ -70,7 +70,7 @@
   "item.swissokyo_addons.bakebakespawner": "Oeuf d'apparition de Bakebake",
   "block.swissokyo_addons.saphire_glass": "Vitre en Saphire",
   "item.swissokyo_addons.zircon_armor_boots": "Bottes en Zircon",
-  "item.swissokyo_addons.condensed_talisman": "Talisman Condensé",
+  "item.swissokyo_addons.condensed_talisman": "Talisman condensé",
   "item.swissokyo_addons.swissarmor_leggings": "Jambière en Swissium",
   "entity.swissokyo_addons.scolopender_warped": "Scolopendre biscornu",
   "item.swissokyo_addons.bismuth_hoe": "Houe en Bismuth",
@@ -87,7 +87,7 @@
   "item.swissokyo_addons.gladiator_armor_boots": "Bottes de Gladiateur",
   "item.swissokyo_addons.shogun_set_chestplate": "Plastron de Shogun",
   "item.swissokyo_addons.centurion_armor_boots": "Bottes de Centurion",
-  "item.swissokyo_addons.dark_diamond": "Diamant des Ténèbres",
+  "item.swissokyo_addons.dark_diamond": "Diamant des ténèbres",
   "item.swissokyo_addons.garn_axe": "Hache en Garnet",
   "item.swissokyo_addons.malach_shovel": "Pelle en Malachite",
   "item.swissokyo_addons.royale_spear": "Lance Royale",
@@ -197,6 +197,10 @@
   "item.swissokyo_extension.true_knife": "Vrai couteau",
   "item.swissokyo_extension.zircon_knife": "Couteau en Zircon",
   "item.swissokyo_extension.makai_ingot": "Lingot en Makai",
+  "item.swissokyo_extension.makai_elytra": "Makai Elytres",
+  "item.swissokyo_extension.coin": "Pièce",
+  "item.swissokyo_extension.dark_talisman": "Talisman sombre",
   "block.swissokyo_extension.scaremakai": "Inari Renard en Swissium",
-  "block.swissokyo_extension.donation_box": "Boite à dons"
+  "block.swissokyo_extension.donation_box": "Boite à dons",
+  "tooltip.swissokyo_extension.true_knife": "§4Où sont les chocolats ?"
 }
