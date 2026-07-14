@@ -1049,3 +1049,21 @@ This may indicate that these types of item need a subtype interpreter added to J
 [14juil.2026 00:33:47.141] [Render thread/INFO] [concerrox.emixx.EmiPlusPlus/]: onStackInteraction: concerrox.emixx.content.stackgroup.data.EmiStackGroup@3033945d
 [14juil.2026 00:40:26.316] [Render thread/INFO] [concerrox.emixx.EmiPlusPlus/]: onStackInteraction: concerrox.emixx.content.stackgroup.data.EmiStackGroup@3033945d
 [14juil.2026 00:40:34.144] [Render thread/INFO] [concerrox.emixx.EmiPlusPlus/]: onStackInteraction: concerrox.emixx.content.stackgroup.data.EmiStackGroup@3033945d
+[14juil.2026 00:42:05.228] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[14juil.2026 00:42:05.236] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[14juil.2026 00:42:05.237] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[14juil.2026 00:42:05.242] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[14juil.2026 00:42:05.250] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 12.59 milliseconds
+[14juil.2026 00:42:05.258] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Déconnecté(e)
+[14juil.2026 00:42:05.259] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev a quitté la partie
+[14juil.2026 00:42:05.295] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[14juil.2026 00:42:05.317] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[14juil.2026 00:42:05.319] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[14juil.2026 00:42:05.319] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[14juil.2026 00:42:05.434] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nouveau monde]'/minecraft:overworld
+[14juil.2026 00:42:05.562] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nouveau monde]'/minecraft:the_nether
+[14juil.2026 00:42:05.582] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nouveau monde]'/minecraft:the_end
+[14juil.2026 00:42:05.647] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Nouveau monde): All chunks are saved
+[14juil.2026 00:42:05.650] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14juil.2026 00:42:05.651] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14juil.2026 00:42:05.652] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
