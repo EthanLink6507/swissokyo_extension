@@ -22,13 +22,13 @@ import net.minecraft.world.item.ItemStack;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 
-public class MakaiElytracuriosRenderer implements ICurioRenderer {
+public class MakaiElytraCuriosRenderer implements ICurioRenderer {
 	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/makai_wings.png");
   @SuppressWarnings("rawtypes")
 private final HumanoidModel humanoidModel;
 
   @SuppressWarnings("rawtypes")
-  public MakaiElytracuriosRenderer() {
+  public MakaiElytraCuriosRenderer() {
         Modelmakai_elytra model = new Modelmakai_elytra(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmakai_elytra.LAYER_LOCATION));
         this.humanoidModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of(
             "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
@@ -44,14 +44,14 @@ private final HumanoidModel humanoidModel;
     @SuppressWarnings("unchecked")
     @Override
     public <T extends LivingEntity, M extends EntityModel<T>> void render(ItemStack stack,
-		SlotContext slotContext, PoseStack matrixStack, RenderLayerParent<T, M> renderLayerParent, MultiBufferSource renderTypeBuffer,
-	  int light, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
-	  LivingEntity entity = slotContext.entity();
-	  ICurioRenderer.followHeadRotations(entity, this.humanoidModel.head);
-	  ICurioRenderer.followBodyRotations(entity, this.humanoidModel);
-	  this.humanoidModel.prepareMobModel(entity, limbSwing, limbSwingAmount, partialTicks);
-	  VertexConsumer vertexconsumer = ItemRenderer.getArmorFoilBuffer(renderTypeBuffer, RenderType.armorCutoutNoCull(TEXTURE), stack.hasFoil());
-	  this.humanoidModel.renderToBuffer(matrixStack, vertexconsumer, light, OverlayTexture.NO_OVERLAY);
+    SlotContext slotContext, PoseStack matrixStack, RenderLayerParent<T, M> renderLayerParent, MultiBufferSource renderTypeBuffer,
+    int light, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
+    LivingEntity entity = slotContext.entity();
+    ICurioRenderer.followHeadRotations(entity, this.humanoidModel.head);
+    ICurioRenderer.followBodyRotations(entity, this.humanoidModel);
+    this.humanoidModel.prepareMobModel(entity, limbSwing, limbSwingAmount, partialTicks);
+    VertexConsumer vertexconsumer = ItemRenderer.getArmorFoilBuffer(renderTypeBuffer, RenderType.armorCutoutNoCull(TEXTURE), stack.hasFoil());
+    this.humanoidModel.renderToBuffer(matrixStack, vertexconsumer, light, OverlayTexture.NO_OVERLAY);
   }
 
 }

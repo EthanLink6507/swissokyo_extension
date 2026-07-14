@@ -27,7 +27,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class ModItems {
+public class SwissokyoExtensionItems {
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SwissokyoExtension.MOD_ID);
 	public static final DeferredItem<Item> BISMUTH_KNIFE;
 	public static final DeferredItem<Item> CORE_KNIFE;
@@ -75,7 +75,7 @@ private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block
 		COIN = ITEMS.register("coin", CoinItem::new);
 		MAKAI_ELYTRA = ITEMS.register("makai_elytra", MakaiElytraItem.Chestplate::new);
 		DARK_TALISMAN = ITEMS.register("dark_talisman", DarkTalismanItem::new);
-		SCAREMAKAI = doubleBlock(ModBlocks.SCAREMAKAI);
-		DONATION_BOX = block(ModBlocks.DONATION_BOX);
+		SCAREMAKAI = doubleBlock(SwissokyoExtensionBlocks.SCAREMAKAI);
+		DONATION_BOX = block(SwissokyoExtensionBlocks.DONATION_BOX);
 		}
 }

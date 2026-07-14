@@ -6,7 +6,7 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 
-public class ModToolTiers {
+public class SwissokyoExtensionToolTiers {
 	public static final Tier DIAMOND_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {

@@ -8,7 +8,7 @@ import net.neoforged.api.distmarker.Dist;
 import com.ethanlink.swissokyo_extension.client.model.Modelmakai_elytra;
 
 @EventBusSubscriber(Dist.CLIENT)
-public class ModModels {
+public class SwissokyoExtensionModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelmakai_elytra.LAYER_LOCATION, Modelmakai_elytra::createBodyLayer);

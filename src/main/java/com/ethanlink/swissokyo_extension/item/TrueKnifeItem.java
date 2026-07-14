@@ -2,7 +2,7 @@ package com.ethanlink.swissokyo_extension.item;
 
 import java.util.List;
 
-import com.ethanlink.swissokyo_extension.init.ModToolTiers;
+import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionToolTiers;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
@@ -13,7 +13,7 @@ import net.minecraft.world.item.TooltipFlag;
 public class TrueKnifeItem extends SwordItem {
 
 	public TrueKnifeItem() {
-		super(ModToolTiers.CHARA_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.CHARA_KNIFE_TIER, 8f, -3.1f)));
+		super(SwissokyoExtensionToolTiers.CHARA_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.CHARA_KNIFE_TIER, 8f, -3.1f)));
 	}
 
     @Override

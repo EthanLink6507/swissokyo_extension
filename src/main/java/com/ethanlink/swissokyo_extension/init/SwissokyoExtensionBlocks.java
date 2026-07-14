@@ -7,7 +7,7 @@ import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class ModBlocks {
+public class SwissokyoExtensionBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks("swissokyo_extension");
     public static final DeferredBlock<Block> SCAREMAKAI;
     public static final DeferredBlock<Block> DONATION_BOX;

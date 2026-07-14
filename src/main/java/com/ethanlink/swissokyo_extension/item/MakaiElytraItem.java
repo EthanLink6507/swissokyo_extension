@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.ethanlink.swissokyo_extension.client.model.Modelmakai_elytra;
-import com.ethanlink.swissokyo_extension.init.ModItems;
+import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionItems;
 
 import net.minecraft.Util;
 import net.minecraft.client.Minecraft;
@@ -72,7 +72,7 @@ public abstract class MakaiElytraItem extends ArmorItem {
 				armorModel.young = living.isBaby();
 				return armorModel;
 			}
-		}, ModItems.MAKAI_ELYTRA.get());
+		}, SwissokyoExtensionItems.MAKAI_ELYTRA.get());
 	}
 
 	public MakaiElytraItem(ArmorItem.Type type, Item.Properties properties) {

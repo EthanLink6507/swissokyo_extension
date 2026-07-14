@@ -7,12 +7,12 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 import org.slf4j.Logger;
 
-import com.ethanlink.swissokyo_extension.init.ModBlocks;
-import com.ethanlink.swissokyo_extension.init.ModCuriosCompat;
-import com.ethanlink.swissokyo_extension.init.ModCuriosRenderers;
-import com.ethanlink.swissokyo_extension.init.ModItems;
-import com.mojang.logging.LogUtils;
+import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionBlocks;
+import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionCuriosCompat;
+import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionCuriosRenderers;
+import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionItems;
 
+import com.mojang.logging.LogUtils;
 import it.unimi.dsi.fastutil.ints.IntObjectImmutablePair;
 import it.unimi.dsi.fastutil.ints.IntObjectPair;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -41,35 +41,35 @@ public class SwissokyoExtension {
     public SwissokyoExtension(IEventBus modEventBus, ModContainer modContainer) {
         NeoForge.EVENT_BUS.register(this);
 		if (ModList.get().isLoaded("curios")) {
-			modEventBus.addListener(ModCuriosCompat::registerCapabilities);
-			modEventBus.addListener(ModCuriosRenderers::registerRenderers);
+			modEventBus.addListener(SwissokyoExtensionCuriosCompat::registerCapabilities);
+			modEventBus.addListener(SwissokyoExtensionCuriosRenderers::registerRenderers);
 		}
         modEventBus.addListener(this::addCreative);
-        ModItems.ITEMS.register(modEventBus);
-        ModBlocks.BLOCKS.register(modEventBus);
+        SwissokyoExtensionItems.ITEMS.register(modEventBus);
+        SwissokyoExtensionBlocks.BLOCKS.register(modEventBus);
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
-            event.accept(ModItems.BISMUTH_KNIFE);
-            event.accept(ModItems.CORE_KNIFE);
-            event.accept(ModItems.GARN_KNIFE);
-            event.accept(ModItems.JAAJ_KNIFE);
-            event.accept(ModItems.MAKAI_KNIFE);
-            event.accept(ModItems.MALACH_KNIFE);
-            event.accept(ModItems.REPTILE_KNIFE);
-            event.accept(ModItems.ROYALE_KNIFE);
-            event.accept(ModItems.SAPHIRE_KNIFE);
-            event.accept(ModItems.SWISS_KNIFE);
-            event.accept(ModItems.TOUR_KNIFE);
-            event.accept(ModItems.TRUE_KNIFE);
-            event.accept(ModItems.ZIRCON_KNIFE);
-            event.accept(ModItems.COIN);
+            event.accept(SwissokyoExtensionItems.BISMUTH_KNIFE);
+            event.accept(SwissokyoExtensionItems.CORE_KNIFE);
+            event.accept(SwissokyoExtensionItems.GARN_KNIFE);
+            event.accept(SwissokyoExtensionItems.JAAJ_KNIFE);
+            event.accept(SwissokyoExtensionItems.MAKAI_KNIFE);
+            event.accept(SwissokyoExtensionItems.MALACH_KNIFE);
+            event.accept(SwissokyoExtensionItems.REPTILE_KNIFE);
+            event.accept(SwissokyoExtensionItems.ROYALE_KNIFE);
+            event.accept(SwissokyoExtensionItems.SAPHIRE_KNIFE);
+            event.accept(SwissokyoExtensionItems.SWISS_KNIFE);
+            event.accept(SwissokyoExtensionItems.TOUR_KNIFE);
+            event.accept(SwissokyoExtensionItems.TRUE_KNIFE);
+            event.accept(SwissokyoExtensionItems.ZIRCON_KNIFE);
+            event.accept(SwissokyoExtensionItems.COIN);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.SCAREMAKAI);
-            event.accept(ModBlocks.DONATION_BOX);
+            event.accept(SwissokyoExtensionBlocks.SCAREMAKAI);
+            event.accept(SwissokyoExtensionBlocks.DONATION_BOX);
         }
     }
 
