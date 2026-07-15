@@ -10,7 +10,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier DIAMOND_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 2501;
+			return 5002;
 		}
 
 		@Override
@@ -42,7 +42,7 @@ public class SwissokyoExtensionToolTiers {
 		public static final Tier NETHERITE_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 2971;
+			return 5942;
 		}
 
 		@Override
@@ -74,7 +74,7 @@ public class SwissokyoExtensionToolTiers {
 		public static final Tier CHARA_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 99;
+			return 999;
 		}
 
 		@Override
