@@ -11,15 +11,16 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.TooltipFlag;
 
-public class TrueKnifeItem extends SwordItem {
+public class RemiliaSpearItem extends SwordItem {
 
-	public TrueKnifeItem() {
-		super(SwissokyoExtensionToolTiers.CHARA_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.CHARA_KNIFE_TIER, 8f, -3.1f)).rarity(Rarity.RARE));
+	public RemiliaSpearItem() {
+		super(SwissokyoExtensionToolTiers.DIAMOND_KNIFE_TIER, new SwordItem.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.DIAMOND_KNIFE_TIER, 8f, -2.9f)).rarity(Rarity.EPIC));
 	}
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.translatable("tooltip.swissokyo_extension.true_knife"));
+        tooltipComponents.add(Component.translatable("tooltip.swissokyo_extension.remilia_spear"));
+        tooltipComponents.add(Component.translatable("tooltip.swissokyo_extension.remilia_spear_joke"));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

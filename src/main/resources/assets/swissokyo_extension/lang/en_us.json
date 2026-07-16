@@ -18,5 +18,14 @@
   "item.swissokyo_extension.dark_talisman": "Dark talisman",
   "block.swissokyo_extension.scaremkai": "Swiss Inari Fox",
   "block.swissokyo_extension.donation_box": "Donation box",
-  "tooltip.swissokyo_extension.true_knife": "§4Where are the chocolate ?"
+  "tooltip.swissokyo_extension.true_knife": "§4No chocolate",
+  "creativetab.swissokyo_extension.tools_tab": "Swissokyo Extension Tools",
+  "creativetab.swissokyo_extension.ressources_tab": "Swissokyo Extension Ressources",
+  "creativetab.swissokyo_extension.blocks_tab": "Swissokyo Extension Blocks",
+  "item.swissokyo_extension.flandre_spear": "Flandre Spear",
+  "item.swissokyo_extension.remilia_spear": "Remilia Spear",
+  "tooltip.swissokyo_extension.flandre_spear": "§cTaboo : Lævateinn",
+  "tooltip.swissokyo_extension.remilia_spear": "§cDivine Spear : Spear the Gungnir",
+  "tooltip.swissokyo_extension.flandre_spear_joke": "§6Ronald McDonald Insanity",
+  "tooltip.swissokyo_extension.remilia_spear_joke": "§6Hey, Mister"
 }

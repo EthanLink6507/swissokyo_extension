@@ -10,6 +10,7 @@ import com.ethanlink.swissokyo_extension.item.MakaiElytraItem;
 import com.ethanlink.swissokyo_extension.item.MakaiIngotItem;
 import com.ethanlink.swissokyo_extension.item.MakaiKnifeItem;
 import com.ethanlink.swissokyo_extension.item.MalachKnifeItem;
+import com.ethanlink.swissokyo_extension.item.RemiliaSpearItem;
 import com.ethanlink.swissokyo_extension.item.ReptileKnifeItem;
 import com.ethanlink.swissokyo_extension.item.RoyaleKnifeItem;
 import com.ethanlink.swissokyo_extension.item.SaphireKnifeItem;
@@ -18,6 +19,7 @@ import com.ethanlink.swissokyo_extension.item.TourKnifeItem;
 import com.ethanlink.swissokyo_extension.item.TrueKnifeItem;
 import com.ethanlink.swissokyo_extension.item.ZirconKnifeItem;
 import com.ethanlink.swissokyo_extension.item.DarkTalismanItem;
+import com.ethanlink.swissokyo_extension.item.FlandreSpearItem;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DoubleHighBlockItem;
@@ -48,6 +50,8 @@ public class SwissokyoExtensionItems {
 	public static final DeferredItem<Item> DONATION_BOX;
 	public static final DeferredItem<Item> MAKAI_ELYTRA;
 	public static final DeferredItem<Item> DARK_TALISMAN;
+	public static final DeferredItem<Item> REMILIA_SPEAR;
+	public static final DeferredItem<Item> FLANDRE_SPEAR;
 
 private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {
     return ITEMS.register(block.getId().getPath(), () -> new BlockItem((Block)block.get(), new Item.Properties()));
@@ -75,6 +79,8 @@ private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block
 		COIN = ITEMS.register("coin", CoinItem::new);
 		MAKAI_ELYTRA = ITEMS.register("makai_elytra", MakaiElytraItem.Chestplate::new);
 		DARK_TALISMAN = ITEMS.register("dark_talisman", DarkTalismanItem::new);
+		REMILIA_SPEAR = ITEMS.register("remilia_spear", RemiliaSpearItem::new);
+		FLANDRE_SPEAR = ITEMS.register("flandre_spear", FlandreSpearItem::new);
 		SCAREMAKAI = doubleBlock(SwissokyoExtensionBlocks.SCAREMAKAI);
 		DONATION_BOX = block(SwissokyoExtensionBlocks.DONATION_BOX);
 		}

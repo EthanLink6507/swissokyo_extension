@@ -23,6 +23,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
@@ -81,7 +82,7 @@ public abstract class MakaiElytraItem extends ArmorItem {
 
 	public static class Chestplate extends MakaiElytraItem {
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(1)));
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(1)).rarity(Rarity.UNCOMMON));
 		}
 
 		private final ResourceLocation armorTexture = ResourceLocation.parse("swissokyo_extension:textures/entities/makai_wings.png");
