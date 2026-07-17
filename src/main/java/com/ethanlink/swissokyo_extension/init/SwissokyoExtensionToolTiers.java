@@ -30,7 +30,7 @@ public class SwissokyoExtensionToolTiers {
 
 		@Override
 		public int getEnchantmentValue() {
-			return 12;
+			return 10;
 		}
 
 		@Override
@@ -95,6 +95,38 @@ public class SwissokyoExtensionToolTiers {
 		@Override
 		public int getEnchantmentValue() {
 			return 15;
+		}
+
+		@Override
+		public Ingredient getRepairIngredient() {
+			return Ingredient.of();
+		}
+	};
+
+		public static final Tier SPEAR_TIER = new Tier() {
+		@Override
+		public int getUses() {
+			return 250;
+		}
+
+		@Override
+		public float getSpeed() {
+			return 4f;
+		}
+
+		@Override
+		public float getAttackDamageBonus() {
+			return 0;
+		}
+
+		@Override
+		public TagKey<Block> getIncorrectBlocksForDrops() {
+			return BlockTags.INCORRECT_FOR_WOODEN_TOOL;
+		}
+
+		@Override
+		public int getEnchantmentValue() {
+			return 1;
 		}
 
 		@Override

@@ -59,7 +59,7 @@ public abstract class MakaiElytraItem extends ArmorItem {
 			@SuppressWarnings("rawtypes")
 			private HumanoidModel armorModel = null;
 
-			@SuppressWarnings({ "rawtypes", "unchecked" })
+			@SuppressWarnings("rawtypes")
 			@Override
 			@OnlyIn(Dist.CLIENT)
 			public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
@@ -82,7 +82,7 @@ public abstract class MakaiElytraItem extends ArmorItem {
 
 	public static class Chestplate extends MakaiElytraItem {
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(1)).rarity(Rarity.UNCOMMON));
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(27)).rarity(Rarity.UNCOMMON));
 		}
 
 		private final ResourceLocation armorTexture = ResourceLocation.parse("swissokyo_extension:textures/entities/makai_wings.png");

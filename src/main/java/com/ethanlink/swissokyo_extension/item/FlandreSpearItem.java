@@ -14,7 +14,7 @@ import net.minecraft.world.item.TooltipFlag;
 public class FlandreSpearItem extends SwordItem {
 
 	public FlandreSpearItem() {
-		super(SwissokyoExtensionToolTiers.DIAMOND_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.DIAMOND_KNIFE_TIER, 8f, -2.9f)).rarity(Rarity.EPIC));
+		super(SwissokyoExtensionToolTiers.SPEAR_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.SPEAR_TIER, 8f, -2.9f)).rarity(Rarity.EPIC));
 	}
     
     @Override

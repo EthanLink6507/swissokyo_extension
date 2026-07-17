@@ -14,7 +14,7 @@ import net.minecraft.world.item.TooltipFlag;
 public class RemiliaSpearItem extends SwordItem {
 
 	public RemiliaSpearItem() {
-		super(SwissokyoExtensionToolTiers.DIAMOND_KNIFE_TIER, new SwordItem.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.DIAMOND_KNIFE_TIER, 8f, -2.9f)).rarity(Rarity.EPIC));
+		super(SwissokyoExtensionToolTiers.SPEAR_TIER, new SwordItem.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.SPEAR_TIER, 8f, -2.9f)).rarity(Rarity.EPIC));
 	}
 
     @Override

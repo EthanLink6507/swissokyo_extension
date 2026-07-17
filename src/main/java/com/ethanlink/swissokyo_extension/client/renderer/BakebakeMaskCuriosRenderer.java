@@ -3,7 +3,7 @@ package com.ethanlink.swissokyo_extension.client.renderer;
 import java.util.Collections;
 import java.util.Map;
 
-import com.ethanlink.swissokyo_extension.client.model.Modelmakai_elytra;
+import com.ethanlink.swissokyo_extension.client.model.Modelbakenekomask;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 
@@ -22,18 +22,18 @@ import net.minecraft.world.item.ItemStack;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 
-public class MakaiElytraCuriosRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/makai_wings.png");
-  @SuppressWarnings("rawtypes")
-private final HumanoidModel humanoidModel;
+public class BakebakeMaskCuriosRenderer implements ICurioRenderer {
+	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/bakenekomask.png");
+	@SuppressWarnings("rawtypes")
+  private final HumanoidModel humanoidModel;
 
-  @SuppressWarnings("rawtypes")
-  public MakaiElytraCuriosRenderer() {
-        Modelmakai_elytra model = new Modelmakai_elytra(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmakai_elytra.LAYER_LOCATION));
+	@SuppressWarnings("rawtypes")
+  public BakebakeMaskCuriosRenderer() {
+        Modelbakenekomask model = new Modelbakenekomask(Minecraft.getInstance().getEntityModels().bakeLayer(Modelbakenekomask.LAYER_LOCATION));
         this.humanoidModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of(
             "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-                "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-                "body", model.Body,
+               "head", model.Head,
+                "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
@@ -43,14 +43,14 @@ private final HumanoidModel humanoidModel;
 
     @Override
     public <T extends LivingEntity, M extends EntityModel<T>> void render(ItemStack stack,
-    SlotContext slotContext, PoseStack matrixStack, RenderLayerParent<T, M> renderLayerParent, MultiBufferSource renderTypeBuffer,
-    int light, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
-    LivingEntity entity = slotContext.entity();
-    ICurioRenderer.followHeadRotations(entity, this.humanoidModel.head);
-    ICurioRenderer.followBodyRotations(entity, this.humanoidModel);
-    this.humanoidModel.prepareMobModel(entity, limbSwing, limbSwingAmount, partialTicks);
-    VertexConsumer vertexconsumer = ItemRenderer.getArmorFoilBuffer(renderTypeBuffer, RenderType.armorCutoutNoCull(TEXTURE), stack.hasFoil());
-    this.humanoidModel.renderToBuffer(matrixStack, vertexconsumer, light, OverlayTexture.NO_OVERLAY);
+		SlotContext slotContext, PoseStack matrixStack, RenderLayerParent<T, M> renderLayerParent, MultiBufferSource renderTypeBuffer,
+	    int light, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
+	    LivingEntity entity = slotContext.entity();
+	    ICurioRenderer.followHeadRotations(entity, this.humanoidModel.head);
+	    ICurioRenderer.followBodyRotations(entity, this.humanoidModel);
+	    this.humanoidModel.prepareMobModel(entity, limbSwing, limbSwingAmount, partialTicks);
+	    VertexConsumer vertexconsumer = ItemRenderer.getArmorFoilBuffer(renderTypeBuffer, RenderType.armorCutoutNoCull(TEXTURE), stack.hasFoil());
+	    this.humanoidModel.renderToBuffer(matrixStack, vertexconsumer, light, OverlayTexture.NO_OVERLAY);
   }
 
 }

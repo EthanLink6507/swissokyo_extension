@@ -182,6 +182,7 @@
   "item.swissokyo_addons.bismut_armor_boots": "Bottes en Bismuth",
   "item.swissokyo_addons.malach_armor_chestplate": "Plastron en Malachite",
   "item.swissokyo_addons.shogun_set_boots": "Bottes de Shogun",
+  "item.swissokyo_addons.kdc_helmet": "Compagnon Kitsune Hanté",
 
   "item.swissokyo_extension.bismuth_knife": "Couteau en Bismuth",
   "item.swissokyo_extension.core_knife": "Couteau en Noyau Lourd",
@@ -202,5 +203,7 @@
   "item.swissokyo_extension.dark_talisman": "Talisman sombre",
   "block.swissokyo_extension.scaremakai": "Inari Renard en Swissium",
   "block.swissokyo_extension.donation_box": "Boite à dons",
-  "tooltip.swissokyo_extension.true_knife": "§4Où sont les chocolats ?"
+  "tooltip.swissokyo_extension.true_knife": "§4Où sont les chocolats ?",
+  "item.swissokyo_extension.flandre_spear": "Lance de Flandre",
+  "item.swissokyo_extension.remilia_spear": "Lance de Remilia"
 }
