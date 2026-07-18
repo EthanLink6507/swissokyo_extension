@@ -16,7 +16,7 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.Minecraft;
 
-import com.ethanlink.swissokyo_extension.client.model.Modelonimask;
+import net.mcreator.swissokyoaddons.client.model.Modelonimask;
 
 import java.util.Map;
 import java.util.Collections;

@@ -44,10 +44,10 @@ public abstract class MakaiElytraItem extends ArmorItem {
 			ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
 				map.put(ArmorItem.Type.BOOTS, 0);
 				map.put(ArmorItem.Type.LEGGINGS, 0);
-				map.put(ArmorItem.Type.CHESTPLATE, 0);
+				map.put(ArmorItem.Type.CHESTPLATE, 8);
 				map.put(ArmorItem.Type.HELMET, 0);
 				map.put(ArmorItem.Type.BODY, 1);
-			}), 15, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.enchantment_table.use")), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("swissokyo_extension:vide"))), 0f, 0.2f);
+			}), 15, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.enchantment_table.use")), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("swissokyo_extension:vide"))), 0.2f, 0.2f);
 			registerHelper.register(ResourceLocation.parse("swissokyo_extension:makai_elytra"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});

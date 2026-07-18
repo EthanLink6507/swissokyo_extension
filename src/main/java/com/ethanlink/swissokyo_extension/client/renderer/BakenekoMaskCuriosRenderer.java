@@ -22,13 +22,13 @@ import net.minecraft.world.item.ItemStack;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 
-public class BakebakeMaskCuriosRenderer implements ICurioRenderer {
+public class BakenekoMaskCuriosRenderer implements ICurioRenderer {
 	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/bakenekomask.png");
 	@SuppressWarnings("rawtypes")
   private final HumanoidModel humanoidModel;
 
 	@SuppressWarnings("rawtypes")
-  public BakebakeMaskCuriosRenderer() {
+  public BakenekoMaskCuriosRenderer() {
         Modelbakenekomask model = new Modelbakenekomask(Minecraft.getInstance().getEntityModels().bakeLayer(Modelbakenekomask.LAYER_LOCATION));
         this.humanoidModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of(
             "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),

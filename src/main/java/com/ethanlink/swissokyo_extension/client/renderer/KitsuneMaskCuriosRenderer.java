@@ -3,7 +3,7 @@ package com.ethanlink.swissokyo_extension.client.renderer;
 import java.util.Collections;
 import java.util.Map;
 
-import com.ethanlink.swissokyo_extension.client.model.ModelKDC;
+import net.mcreator.swissokyoaddons.client.model.ModelKDC;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 
@@ -22,13 +22,13 @@ import net.minecraft.world.item.ItemStack;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 
-public class KistuneMaskCuriosRenderer implements ICurioRenderer {
+public class KitsuneMaskCuriosRenderer implements ICurioRenderer {
 	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/kdc.png");
 	@SuppressWarnings("rawtypes")
   private final HumanoidModel humanoidModel;
 
 	@SuppressWarnings("rawtypes")
-  public KistuneMaskCuriosRenderer() {
+  public KitsuneMaskCuriosRenderer() {
         ModelKDC model = new ModelKDC(Minecraft.getInstance().getEntityModels().bakeLayer(ModelKDC.LAYER_LOCATION));
         this.humanoidModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of(
             "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),

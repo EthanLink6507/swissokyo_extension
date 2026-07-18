@@ -3,7 +3,7 @@ package com.ethanlink.swissokyo_extension.client.renderer;
 import java.util.Collections;
 import java.util.Map;
 
-import com.ethanlink.swissokyo_extension.client.model.Modelmakai_elytra;
+import net.mcreator.swissokyoaddons.client.model.Modelmakai_wings;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 
@@ -29,7 +29,7 @@ private final HumanoidModel humanoidModel;
 
   @SuppressWarnings("rawtypes")
   public MakaiWingsCuriosRenderer() {
-        Modelmakai_elytra model = new Modelmakai_elytra(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmakai_elytra.LAYER_LOCATION));
+        Modelmakai_wings model = new Modelmakai_wings(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmakai_wings.LAYER_LOCATION));
         this.humanoidModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of(
             "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),

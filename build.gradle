@@ -135,6 +135,7 @@ dependencies {
     runtimeOnly "com.illusivesoulworks.caelus:caelus-neoforge:7.0.1+1.21.1"
     compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
     runtimeOnly "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
+    implementation files('libs/SWISSOKYO_ADDONS_V2.jar')
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

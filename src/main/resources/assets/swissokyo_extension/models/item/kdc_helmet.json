@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0" : "swissokyo_extension:item/kitsune_haunted_companion"
+    }
+}
+

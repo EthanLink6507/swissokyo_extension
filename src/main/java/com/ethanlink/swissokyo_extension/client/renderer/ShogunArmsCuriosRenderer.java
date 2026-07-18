@@ -3,7 +3,7 @@ package com.ethanlink.swissokyo_extension.client.renderer;
 import java.util.Collections;
 import java.util.Map;
 
-import com.ethanlink.swissokyo_extension.client.model.Modelshogun_arms;
+import net.mcreator.swissokyoaddons.client.model.Modelshogun_arms;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 

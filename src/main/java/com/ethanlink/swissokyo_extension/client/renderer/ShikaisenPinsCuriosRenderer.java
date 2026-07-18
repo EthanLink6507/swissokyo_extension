@@ -16,7 +16,7 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.Minecraft;
 
-import com.ethanlink.swissokyo_extension.client.model.Modelshikaisen_pins;
+import net.mcreator.swissokyoaddons.client.model.Modelshikaisen_pins;
 
 import java.util.Map;
 import java.util.Collections;
