@@ -7,6 +7,6 @@ import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionToolTiers;
 public class JaajKnifeItem extends SwordItem {
 
 	public JaajKnifeItem() {
-		super(SwissokyoExtensionToolTiers.DIAMOND_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.DIAMOND_KNIFE_TIER, 3.5f, -1.9f)));
+		super(SwissokyoExtensionToolTiers.JADE_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.JADE_KNIFE_TIER, 3.5f, -1.9f)));
 	}
 }

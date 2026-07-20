@@ -8,6 +8,6 @@ import net.minecraft.world.item.SwordItem;
 public class BismuthKnifeItem extends SwordItem {
 
 	public BismuthKnifeItem() {
-		super(SwissokyoExtensionToolTiers.NETHERITE_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.NETHERITE_KNIFE_TIER, 5.5f, -1.5f)));
+		super(SwissokyoExtensionToolTiers.BISMUTH_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.BISMUTH_KNIFE_TIER, 5.5f, -1.5f)));
 	}
 }

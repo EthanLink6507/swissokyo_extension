@@ -7,6 +7,6 @@ import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionToolTiers;
 public class GarnKnifeItem extends SwordItem {
 
 	public GarnKnifeItem() {
-		super(SwissokyoExtensionToolTiers.DIAMOND_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.DIAMOND_KNIFE_TIER, 2.5f, -1.5f)));
+		super(SwissokyoExtensionToolTiers.GARN_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.GARN_KNIFE_TIER, 2.5f, -1.5f)));
 	}
 }

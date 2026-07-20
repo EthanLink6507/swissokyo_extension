@@ -32,8 +32,8 @@ private final HumanoidModel humanoidModel;
         Modelmakai_elytra model = new Modelmakai_elytra(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmakai_elytra.LAYER_LOCATION));
         this.humanoidModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of(
             "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-                "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-                "body", model.Body,
+                "head", model.Body,
+                "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()),

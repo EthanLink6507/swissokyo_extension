@@ -2,8 +2,8 @@
 "type": "minecraft:crafting_shaped",
 "category": "misc",
 "pattern": [
-    " ca",
-    " bc",
+    "  c",
+    " a ",
     "b  "
 ],
 "key": {
@@ -14,7 +14,7 @@
     "item": "swissokyo_addons:netheriterod"
     },
     "c": {
-    "item": "swissokyo_addons:shadow_pearl"
+    "item": "minecraft:clock"
     }
     },
     "result": {

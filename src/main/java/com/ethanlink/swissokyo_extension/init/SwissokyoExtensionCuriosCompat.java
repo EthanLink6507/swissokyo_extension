@@ -6,12 +6,12 @@ import top.theillusivec4.curios.api.CuriosCapability;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurio;
 
+import com.ethanlink.swissokyo_extension.item.procedures.BakenekoMaskCuriosProcedures;
 import com.ethanlink.swissokyo_extension.item.procedures.KitsuneMaskCuriosProcedures;
 
 import net.mcreator.swissokyoaddons.init.SwissokyoAddonsModItems;
 
 import net.mcreator.swissokyoaddons.procedures.ShogunArmsTickEventProcedure;
-import net.mcreator.swissokyoaddons.procedures.BNKHelmetTickEventProcedure;
 import net.mcreator.swissokyoaddons.procedures.OniHelmetTickEventProcedure;
 
 public class SwissokyoExtensionCuriosCompat {
@@ -59,7 +59,7 @@ public class SwissokyoExtensionCuriosCompat {
 			}
 			@Override
 			public void curioTick(SlotContext slotContext) {
-				BNKHelmetTickEventProcedure.execute(slotContext.entity());
+				BakenekoMaskCuriosProcedures.execute(slotContext.entity());
 			}
 		}, 
 		SwissokyoAddonsModItems.BNK_HELMET.get());

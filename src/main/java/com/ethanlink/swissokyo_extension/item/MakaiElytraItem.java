@@ -8,6 +8,7 @@ import java.util.Map;
 import com.ethanlink.swissokyo_extension.client.model.Modelmakai_elytra;
 import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionItems;
 
+import net.mcreator.swissokyoaddons.init.SwissokyoAddonsModItems;
 import net.minecraft.Util;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.HumanoidModel;
@@ -47,7 +48,7 @@ public abstract class MakaiElytraItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 8);
 				map.put(ArmorItem.Type.HELMET, 0);
 				map.put(ArmorItem.Type.BODY, 1);
-			}), 15, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.enchantment_table.use")), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("swissokyo_extension:vide"))), 0.2f, 0.2f);
+			}), 15, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.enchantment_table.use")), () -> Ingredient.of(SwissokyoAddonsModItems.SHINAIAWING, SwissokyoExtensionItems.MAKAI_INGOT), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("swissokyo_extension:vide"))), 0.2f, 0.2f);
 			registerHelper.register(ResourceLocation.parse("swissokyo_extension:makai_elytra"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});

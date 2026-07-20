@@ -3,7 +3,7 @@ package com.ethanlink.swissokyo_extension.client.renderer;
 import java.util.Collections;
 import java.util.Map;
 
-import net.mcreator.swissokyoaddons.client.model.ModelKDC;
+import com.ethanlink.swissokyo_extension.client.model.ModelKDC;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 
@@ -23,7 +23,7 @@ import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 
 public class KitsuneMaskCuriosRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/kdc.png");
+	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_addons:textures/entities/kdcu.png");
 	@SuppressWarnings("rawtypes")
   private final HumanoidModel humanoidModel;
 
@@ -32,9 +32,9 @@ public class KitsuneMaskCuriosRenderer implements ICurioRenderer {
         ModelKDC model = new ModelKDC(Minecraft.getInstance().getEntityModels().bakeLayer(ModelKDC.LAYER_LOCATION));
         this.humanoidModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of(
             "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-               "head", model.body,
-                "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-                "left_arm", model.mask,
+                "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+                "body", model.body,
+                "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap())

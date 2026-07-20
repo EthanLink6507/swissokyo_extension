@@ -8,6 +8,6 @@ import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionToolTiers;
 public class ReptileKnifeItem extends SwordItem {
 
 	public ReptileKnifeItem() {
-		super(SwissokyoExtensionToolTiers.NETHERITE_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.NETHERITE_KNIFE_TIER, 6f, -2.1f)));
+		super(SwissokyoExtensionToolTiers.REPTILE_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.REPTILE_KNIFE_TIER, 6f, -2.1f)));
 	}
 }

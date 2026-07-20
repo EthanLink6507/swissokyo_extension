@@ -7,6 +7,6 @@ import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionToolTiers;
 public class RoyaleKnifeItem extends SwordItem {
 
 	public RoyaleKnifeItem() {
-		super(SwissokyoExtensionToolTiers.NETHERITE_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.NETHERITE_KNIFE_TIER, 5.5f, -1.5f)));
+		super(SwissokyoExtensionToolTiers.ROYAL_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.ROYAL_KNIFE_TIER, 5.5f, -1.5f)));
 	}
 }

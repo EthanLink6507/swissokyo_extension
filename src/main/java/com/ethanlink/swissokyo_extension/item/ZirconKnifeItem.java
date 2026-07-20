@@ -7,6 +7,6 @@ import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionToolTiers;
 public class ZirconKnifeItem extends SwordItem {
 
 	public ZirconKnifeItem() {
-		super(SwissokyoExtensionToolTiers.DIAMOND_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.DIAMOND_KNIFE_TIER, 4.5f, -2.2f)));
+		super(SwissokyoExtensionToolTiers.ZIRCON_KNIFE_TIER, new Item.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.ZIRCON_KNIFE_TIER, 4.5f, -2.2f)));
 	}
 }
