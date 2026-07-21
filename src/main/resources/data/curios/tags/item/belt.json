@@ -1,4 +1,7 @@
 {
   "replace": false,
-  "values": ["swissokyo_addons:shogun_set_leggings", "swissokyo_addons:sks_armor_leggings"]
+  "values": [
+  "swissokyo_addons:shogun_set_leggings",
+  "swissokyo_addons:sks_armor_leggings"
+  ]
 }

@@ -3,7 +3,7 @@ package com.ethanlink.swissokyo_extension.client.renderer;
 import java.util.Collections;
 import java.util.Map;
 
-import com.ethanlink.swissokyo_extension.client.model.ModelKDC;
+import net.mcreator.swissokyoaddons.client.model.ModelKDC;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 
@@ -23,7 +23,7 @@ import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 
 public class KitsuneMaskCuriosRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_addons:textures/entities/kdcu.png");
+	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/kdc.png");
 	@SuppressWarnings("rawtypes")
   private final HumanoidModel humanoidModel;
 

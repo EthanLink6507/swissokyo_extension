@@ -1,4 +1,6 @@
 {
   "replace": false,
-  "values": ["swissokyo_addons:sks_armor_helmet", "swissokyo_addons:bnk_helmet", "swissokyo_addons:kdc_helmet", "swissokyo_addons:oni_helmet"]
+  "values": [
+  "swissokyo_addons:sks_armor_helmet", "swissokyo_addons:bnk_helmet", "swissokyo_addons:kdc_helmet", "swissokyo_addons:oni_helmet"
+  ]
 }

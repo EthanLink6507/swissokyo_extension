@@ -1,4 +1,6 @@
 {
   "replace": false,
-  "values": ["swissokyo_addons:sks_armor_helmet"]
+  "values": [
+  "swissokyo_addons:sks_armor_helmet"
+  ]
 }

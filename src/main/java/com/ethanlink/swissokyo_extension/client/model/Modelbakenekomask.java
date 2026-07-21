@@ -30,7 +30,7 @@ public class Modelbakenekomask<T extends Entity> extends EntityModel<T> {
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition Waist = partdefinition.addOrReplaceChild("Waist", CubeListBuilder.create(), PartPose.offset(0.0F, 12.0F, 0.0F));
 		PartDefinition Head = Waist.addOrReplaceChild("Head", CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.52F)), PartPose.offset(0.0F, -10.0F, 0.0F));
-		Head.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(0, 15).addBox(-2.0F, -6.0F, -6.0F, 0.0F, 9.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-3.6F, -4.0F, 0.5F, -0.1745F, 0.0F, 0.0F));
+		Head.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(0, 15).addBox(-1.5F, -6.0F, -6.0F, 0.0F, 9.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-3.6F, -4.0F, 0.5F, -0.1745F, 0.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 

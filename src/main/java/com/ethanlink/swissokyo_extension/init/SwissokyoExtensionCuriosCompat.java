@@ -22,14 +22,6 @@ public class SwissokyoExtensionCuriosCompat {
 				return stack;
 			}
 		}, 
-		SwissokyoExtensionItems.MAKAI_ELYTRA.get());
-
-		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
-			@Override
-			public ItemStack getStack() {
-				return stack;
-			}
-		}, 
 		SwissokyoAddonsModItems.MAKAI_WINGS_CHESTPLATE.get());
 
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {

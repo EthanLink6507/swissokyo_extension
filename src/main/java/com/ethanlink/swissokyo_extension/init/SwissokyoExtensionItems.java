@@ -4,9 +4,9 @@ import com.ethanlink.swissokyo_extension.SwissokyoExtension;
 import com.ethanlink.swissokyo_extension.item.BismuthKnifeItem;
 import com.ethanlink.swissokyo_extension.item.CoinItem;
 import com.ethanlink.swissokyo_extension.item.CoreKnifeItem;
+import com.ethanlink.swissokyo_extension.item.FlandreSpearItem;
 import com.ethanlink.swissokyo_extension.item.GarnKnifeItem;
 import com.ethanlink.swissokyo_extension.item.JaajKnifeItem;
-import com.ethanlink.swissokyo_extension.item.MakaiElytraItem;
 import com.ethanlink.swissokyo_extension.item.MakaiIngotItem;
 import com.ethanlink.swissokyo_extension.item.MakaiKnifeItem;
 import com.ethanlink.swissokyo_extension.item.MalachKnifeItem;
@@ -18,8 +18,6 @@ import com.ethanlink.swissokyo_extension.item.SwissKnifeItem;
 import com.ethanlink.swissokyo_extension.item.TourKnifeItem;
 import com.ethanlink.swissokyo_extension.item.TrueKnifeItem;
 import com.ethanlink.swissokyo_extension.item.ZirconKnifeItem;
-import com.ethanlink.swissokyo_extension.item.DarkTalismanItem;
-import com.ethanlink.swissokyo_extension.item.FlandreSpearItem;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DoubleHighBlockItem;
@@ -48,8 +46,6 @@ public class SwissokyoExtensionItems {
 	public static final DeferredItem<Item> COIN;
 	public static final DeferredItem<Item> SCAREMAKAI;
 	public static final DeferredItem<Item> DONATION_BOX;
-	public static final DeferredItem<Item> MAKAI_ELYTRA;
-	public static final DeferredItem<Item> DARK_TALISMAN;
 	public static final DeferredItem<Item> REMILIA_SPEAR;
 	public static final DeferredItem<Item> FLANDRE_SPEAR;
 
@@ -77,8 +73,6 @@ private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block
 		ZIRCON_KNIFE = ITEMS.register("zircon_knife", ZirconKnifeItem::new);
 		MAKAI_INGOT = ITEMS.register("makai_ingot", MakaiIngotItem::new);
 		COIN = ITEMS.register("coin", CoinItem::new);
-		MAKAI_ELYTRA = ITEMS.register("makai_elytra", MakaiElytraItem.Chestplate::new);
-		DARK_TALISMAN = ITEMS.register("dark_talisman", DarkTalismanItem::new);
 		REMILIA_SPEAR = ITEMS.register("remilia_spear", RemiliaSpearItem::new);
 		FLANDRE_SPEAR = ITEMS.register("flandre_spear", FlandreSpearItem::new);
 		SCAREMAKAI = doubleBlock(SwissokyoExtensionBlocks.SCAREMAKAI);

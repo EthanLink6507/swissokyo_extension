@@ -32,9 +32,6 @@ public class SwissokyoExtensionCreativeTabs {
                     output.accept(SwissokyoExtensionItems.TOUR_KNIFE);
                     output.accept(SwissokyoExtensionItems.TRUE_KNIFE);
                     output.accept(SwissokyoExtensionItems.ZIRCON_KNIFE);
-                    output.accept(SwissokyoExtensionItems.MAKAI_ELYTRA);
-                    output.accept(SwissokyoExtensionItems.REMILIA_SPEAR);
-                    output.accept(SwissokyoExtensionItems.FLANDRE_SPEAR);
                 })
                 .build());
     public static final Supplier<CreativeModeTab> SWISSOKYO_RESSOURCES = CREATIVE_MODE_TAB.register("swissokyo_extension_ressources_tab",
@@ -43,7 +40,6 @@ public class SwissokyoExtensionCreativeTabs {
                 .displayItems((ItemDisplayParameters, output) -> {
                     output.accept(SwissokyoExtensionItems.MAKAI_INGOT);
                     output.accept(SwissokyoExtensionItems.COIN);
-                    output.accept(SwissokyoExtensionItems.DARK_TALISMAN);
                 })
                 .build());
     public static final Supplier<CreativeModeTab> SWISSOKYO_BLOCKS = CREATIVE_MODE_TAB.register("swissokyo_extension_blocks_tab",

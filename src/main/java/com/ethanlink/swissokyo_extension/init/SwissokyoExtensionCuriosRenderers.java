@@ -2,7 +2,6 @@ package com.ethanlink.swissokyo_extension.init;
 
 import com.ethanlink.swissokyo_extension.client.renderer.BakenekoMaskCuriosRenderer;
 import com.ethanlink.swissokyo_extension.client.renderer.KitsuneMaskCuriosRenderer;
-import com.ethanlink.swissokyo_extension.client.renderer.MakaiElytraCuriosRenderer;
 import com.ethanlink.swissokyo_extension.client.renderer.MakaiWingsCuriosRenderer;
 import com.ethanlink.swissokyo_extension.client.renderer.OniMaskCuriosRenderer;
 import com.ethanlink.swissokyo_extension.client.renderer.ShikaisenArmsCuriosRenderer;
@@ -15,7 +14,6 @@ import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
 public class SwissokyoExtensionCuriosRenderers {
 	public static void registerRenderers(FMLClientSetupEvent event) {
-		CuriosRendererRegistry.register(SwissokyoExtensionItems.MAKAI_ELYTRA.get(), MakaiElytraCuriosRenderer::new);
 		CuriosRendererRegistry.register(SwissokyoAddonsModItems.MAKAI_WINGS_CHESTPLATE.get(), MakaiWingsCuriosRenderer::new);
 		CuriosRendererRegistry.register(SwissokyoAddonsModItems.SKS_ARMOR_HELMET.get(), ShikaisenPinsCuriosRenderer::new);
 		CuriosRendererRegistry.register(SwissokyoAddonsModItems.SKS_ARMOR_LEGGINGS.get(), ShikaisenArmsCuriosRenderer::new);
