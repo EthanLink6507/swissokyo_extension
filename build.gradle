@@ -31,14 +31,6 @@ repositories {
         name = "Illusive Soulworks maven"
         url = "https://maven.theillusivec4.top/"
     }
-    maven {
-        name = "Jared's maven"
-        url = "https://maven.blamejared.com/"
-    }
-    maven {
-        name = "ModMaven"
-        url = "https://modmaven.dev"
-    }
 }
 
 base {
@@ -133,8 +125,6 @@ dependencies {
     runtimeOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}"
     compileOnly "com.illusivesoulworks.caelus:caelus-neoforge:7.0.1+1.21.1:api"
     runtimeOnly "com.illusivesoulworks.caelus:caelus-neoforge:7.0.1+1.21.1"
-    compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
-    runtimeOnly "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
     implementation files('libs/SWISSOKYO_ADDONS_V2.jar')
 }
 

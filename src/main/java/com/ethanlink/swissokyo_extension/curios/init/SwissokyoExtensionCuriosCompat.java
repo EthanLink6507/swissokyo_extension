@@ -1,4 +1,4 @@
-package com.ethanlink.swissokyo_extension.init;
+package com.ethanlink.swissokyo_extension.curios.init;
 
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;

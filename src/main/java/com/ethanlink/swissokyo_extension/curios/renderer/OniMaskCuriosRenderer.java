@@ -1,4 +1,4 @@
-package com.ethanlink.swissokyo_extension.client.renderer;
+package com.ethanlink.swissokyo_extension.curios.renderer;
 
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 import top.theillusivec4.curios.api.SlotContext;

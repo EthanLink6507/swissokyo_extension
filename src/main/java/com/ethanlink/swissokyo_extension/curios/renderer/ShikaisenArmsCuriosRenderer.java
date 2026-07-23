@@ -1,42 +1,44 @@
-package com.ethanlink.swissokyo_extension.client.renderer;
+package com.ethanlink.swissokyo_extension.curios.renderer;
 
-import java.util.Collections;
-import java.util.Map;
-
-import com.ethanlink.swissokyo_extension.client.model.Modelbakenekomask;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
-
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.model.EntityModel;
-import net.minecraft.client.model.HumanoidModel;
-import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.entity.ItemRenderer;
-import net.minecraft.client.renderer.entity.RenderLayerParent;
-import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.ItemStack;
-import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
+import top.theillusivec4.curios.api.SlotContext;
 
-public class BakenekoMaskCuriosRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/bakenekomask.png");
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.renderer.entity.RenderLayerParent;
+import net.minecraft.client.renderer.entity.ItemRenderer;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.swissokyoaddons.client.model.Modelshikaisen_arms;
+
+import java.util.Map;
+import java.util.Collections;
+
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack;
+
+public class ShikaisenArmsCuriosRenderer implements ICurioRenderer {
+	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/shikaisenarms.png");
 	@SuppressWarnings("rawtypes")
-  private final HumanoidModel humanoidModel;
+	private final HumanoidModel humanoidModel;
 
 	@SuppressWarnings("rawtypes")
-  public BakenekoMaskCuriosRenderer() {
-        Modelbakenekomask model = new Modelbakenekomask(Minecraft.getInstance().getEntityModels().bakeLayer(Modelbakenekomask.LAYER_LOCATION));
+	public ShikaisenArmsCuriosRenderer() {
+        Modelshikaisen_arms model = new Modelshikaisen_arms(Minecraft.getInstance().getEntityModels().bakeLayer(Modelshikaisen_arms.LAYER_LOCATION));
         this.humanoidModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of(
             "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-               "head", model.Head,
+               "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-                "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+                "left_leg", model.leftLeg,
                 "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap())
         )));
 	}

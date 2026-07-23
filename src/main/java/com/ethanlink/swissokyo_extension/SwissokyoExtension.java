@@ -7,10 +7,10 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 import org.slf4j.Logger;
 
+import com.ethanlink.swissokyo_extension.curios.init.SwissokyoExtensionCuriosCompat;
+import com.ethanlink.swissokyo_extension.curios.init.SwissokyoExtensionCuriosRenderers;
 import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionBlocks;
 import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionCreativeTabs;
-import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionCuriosCompat;
-import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionCuriosRenderers;
 import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionItems;
 
 import com.mojang.logging.LogUtils;

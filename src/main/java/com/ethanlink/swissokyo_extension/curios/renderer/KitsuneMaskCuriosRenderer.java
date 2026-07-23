@@ -1,41 +1,39 @@
-package com.ethanlink.swissokyo_extension.client.renderer;
+package com.ethanlink.swissokyo_extension.curios.renderer;
 
-import top.theillusivec4.curios.api.client.ICurioRenderer;
-import top.theillusivec4.curios.api.SlotContext;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.client.renderer.entity.RenderLayerParent;
-import net.minecraft.client.renderer.entity.ItemRenderer;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.client.model.HumanoidModel;
-import net.minecraft.client.model.EntityModel;
-import net.minecraft.client.Minecraft;
-
-import net.mcreator.swissokyoaddons.client.model.Modelshikaisen_pins;
-
-import java.util.Map;
 import java.util.Collections;
+import java.util.Map;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
+import net.mcreator.swissokyoaddons.client.model.ModelKDC;
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 
-public class ShikaisenPinsCuriosRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/shikaisenpins.png");
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.ItemRenderer;
+import net.minecraft.client.renderer.entity.RenderLayerParent;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
+import top.theillusivec4.curios.api.SlotContext;
+import top.theillusivec4.curios.api.client.ICurioRenderer;
+
+public class KitsuneMaskCuriosRenderer implements ICurioRenderer {
+	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/kdc.png");
 	@SuppressWarnings("rawtypes")
   private final HumanoidModel humanoidModel;
 
 	@SuppressWarnings("rawtypes")
-  public ShikaisenPinsCuriosRenderer() {
-        Modelshikaisen_pins model = new Modelshikaisen_pins(Minecraft.getInstance().getEntityModels().bakeLayer(Modelshikaisen_pins.LAYER_LOCATION));
+  public KitsuneMaskCuriosRenderer() {
+        ModelKDC model = new ModelKDC(Minecraft.getInstance().getEntityModels().bakeLayer(ModelKDC.LAYER_LOCATION));
         this.humanoidModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of(
             "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-               "head", model.Head,
-                "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+                "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+                "body", model.body,
                 "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()),

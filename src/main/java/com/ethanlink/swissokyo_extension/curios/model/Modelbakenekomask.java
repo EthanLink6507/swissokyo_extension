@@ -1,4 +1,4 @@
-package com.ethanlink.swissokyo_extension.client.model;
+package com.ethanlink.swissokyo_extension.curios.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;

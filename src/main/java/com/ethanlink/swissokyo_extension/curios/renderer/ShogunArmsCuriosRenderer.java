@@ -1,4 +1,4 @@
-package com.ethanlink.swissokyo_extension.client.renderer;
+package com.ethanlink.swissokyo_extension.curios.renderer;
 
 import java.util.Collections;
 import java.util.Map;

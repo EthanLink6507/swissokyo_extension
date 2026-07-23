@@ -1,12 +1,12 @@
-package com.ethanlink.swissokyo_extension.init;
+package com.ethanlink.swissokyo_extension.curios.init;
 
-import com.ethanlink.swissokyo_extension.client.renderer.BakenekoMaskCuriosRenderer;
-import com.ethanlink.swissokyo_extension.client.renderer.KitsuneMaskCuriosRenderer;
-import com.ethanlink.swissokyo_extension.client.renderer.MakaiWingsCuriosRenderer;
-import com.ethanlink.swissokyo_extension.client.renderer.OniMaskCuriosRenderer;
-import com.ethanlink.swissokyo_extension.client.renderer.ShikaisenArmsCuriosRenderer;
-import com.ethanlink.swissokyo_extension.client.renderer.ShikaisenPinsCuriosRenderer;
-import com.ethanlink.swissokyo_extension.client.renderer.ShogunArmsCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.BakenekoMaskCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.KitsuneMaskCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.MakaiWingsCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.OniMaskCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.ShikaisenArmsCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.ShikaisenPinsCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.ShogunArmsCuriosRenderer;
 
 import net.mcreator.swissokyoaddons.init.SwissokyoAddonsModItems;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;

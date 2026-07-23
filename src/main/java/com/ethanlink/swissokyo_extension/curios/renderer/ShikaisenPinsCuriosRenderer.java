@@ -1,4 +1,4 @@
-package com.ethanlink.swissokyo_extension.client.renderer;
+package com.ethanlink.swissokyo_extension.curios.renderer;
 
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 import top.theillusivec4.curios.api.SlotContext;
@@ -16,7 +16,7 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.swissokyoaddons.client.model.Modelshikaisen_arms;
+import net.mcreator.swissokyoaddons.client.model.Modelshikaisen_pins;
 
 import java.util.Map;
 import java.util.Collections;
@@ -24,21 +24,21 @@ import java.util.Collections;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-public class ShikaisenArmsCuriosRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/shikaisenarms.png");
+public class ShikaisenPinsCuriosRenderer implements ICurioRenderer {
+	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/shikaisenpins.png");
 	@SuppressWarnings("rawtypes")
-	private final HumanoidModel humanoidModel;
+  private final HumanoidModel humanoidModel;
 
 	@SuppressWarnings("rawtypes")
-	public ShikaisenArmsCuriosRenderer() {
-        Modelshikaisen_arms model = new Modelshikaisen_arms(Minecraft.getInstance().getEntityModels().bakeLayer(Modelshikaisen_arms.LAYER_LOCATION));
+  public ShikaisenPinsCuriosRenderer() {
+        Modelshikaisen_pins model = new Modelshikaisen_pins(Minecraft.getInstance().getEntityModels().bakeLayer(Modelshikaisen_pins.LAYER_LOCATION));
         this.humanoidModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of(
             "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-               "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+               "head", model.Head,
                 "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-                "left_leg", model.leftLeg,
+                "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap())
         )));
 	}
