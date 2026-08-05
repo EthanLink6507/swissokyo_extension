@@ -9,7 +9,6 @@ import org.slf4j.Logger;
 
 import com.ethanlink.swissokyo_extension.curios.init.SwissokyoExtensionCuriosCompat;
 import com.ethanlink.swissokyo_extension.curios.init.SwissokyoExtensionCuriosRenderers;
-import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionBlocks;
 import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionCreativeTabs;
 import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionItems;
 
@@ -45,7 +44,6 @@ public class SwissokyoExtension {
 		}
 		SwissokyoExtensionCreativeTabs.register(modEventBus);
         SwissokyoExtensionItems.ITEMS.register(modEventBus);
-        SwissokyoExtensionBlocks.BLOCKS.register(modEventBus);
     }
 
 	@SubscribeEvent

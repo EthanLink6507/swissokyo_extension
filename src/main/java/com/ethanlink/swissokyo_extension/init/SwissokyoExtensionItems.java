@@ -2,15 +2,12 @@ package com.ethanlink.swissokyo_extension.init;
 
 import com.ethanlink.swissokyo_extension.SwissokyoExtension;
 import com.ethanlink.swissokyo_extension.item.BismuthKnifeItem;
-import com.ethanlink.swissokyo_extension.item.CoinItem;
 import com.ethanlink.swissokyo_extension.item.CoreKnifeItem;
-import com.ethanlink.swissokyo_extension.item.FlandreSpearItem;
 import com.ethanlink.swissokyo_extension.item.GarnKnifeItem;
 import com.ethanlink.swissokyo_extension.item.JaajKnifeItem;
 import com.ethanlink.swissokyo_extension.item.MakaiIngotItem;
 import com.ethanlink.swissokyo_extension.item.MakaiKnifeItem;
 import com.ethanlink.swissokyo_extension.item.MalachKnifeItem;
-import com.ethanlink.swissokyo_extension.item.RemiliaSpearItem;
 import com.ethanlink.swissokyo_extension.item.ReptileKnifeItem;
 import com.ethanlink.swissokyo_extension.item.RoyaleKnifeItem;
 import com.ethanlink.swissokyo_extension.item.SaphireKnifeItem;
@@ -19,11 +16,7 @@ import com.ethanlink.swissokyo_extension.item.TourKnifeItem;
 import com.ethanlink.swissokyo_extension.item.TrueKnifeItem;
 import com.ethanlink.swissokyo_extension.item.ZirconKnifeItem;
 
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -43,19 +36,6 @@ public class SwissokyoExtensionItems {
 	public static final DeferredItem<Item> TRUE_KNIFE;
 	public static final DeferredItem<Item> ZIRCON_KNIFE;
 	public static final DeferredItem<Item> MAKAI_INGOT;
-	public static final DeferredItem<Item> COIN;
-	public static final DeferredItem<Item> SCAREMAKAI;
-	public static final DeferredItem<Item> DONATION_BOX;
-	public static final DeferredItem<Item> REMILIA_SPEAR;
-	public static final DeferredItem<Item> FLANDRE_SPEAR;
-
-private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {
-    return ITEMS.register(block.getId().getPath(), () -> new BlockItem((Block)block.get(), new Item.Properties()));
-	}
-
-private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block) {
-    return ITEMS.register(block.getId().getPath(), () -> new DoubleHighBlockItem((Block)block.get(), new Item.Properties()));
-	}
 
 	static {
 		BISMUTH_KNIFE = ITEMS.register("bismuth_knife", BismuthKnifeItem::new);
@@ -72,10 +52,5 @@ private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block
 		TRUE_KNIFE = ITEMS.register("true_knife", TrueKnifeItem::new);
 		ZIRCON_KNIFE = ITEMS.register("zircon_knife", ZirconKnifeItem::new);
 		MAKAI_INGOT = ITEMS.register("makai_ingot", MakaiIngotItem::new);
-		COIN = ITEMS.register("coin", CoinItem::new);
-		REMILIA_SPEAR = ITEMS.register("remilia_spear", RemiliaSpearItem::new);
-		FLANDRE_SPEAR = ITEMS.register("flandre_spear", FlandreSpearItem::new);
-		SCAREMAKAI = doubleBlock(SwissokyoExtensionBlocks.SCAREMAKAI);
-		DONATION_BOX = block(SwissokyoExtensionBlocks.DONATION_BOX);
 		}
 }

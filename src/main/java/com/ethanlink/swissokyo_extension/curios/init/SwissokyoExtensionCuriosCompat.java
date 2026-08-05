@@ -1,18 +1,16 @@
 package com.ethanlink.swissokyo_extension.curios.init;
 
+import com.ethanlink.swissokyo_extension.item.procedures.BakenekoMaskCuriosProcedures;
+import com.ethanlink.swissokyo_extension.item.procedures.KitsuneMaskCuriosProcedures;
+
+import net.mcreator.swissokyoaddons.init.SwissokyoAddonsModItems;
+import net.mcreator.swissokyoaddons.procedures.OniHelmetTickEventProcedure;
+import net.mcreator.swissokyoaddons.procedures.ShogunArmsTickEventProcedure;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import top.theillusivec4.curios.api.CuriosCapability;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurio;
-
-import com.ethanlink.swissokyo_extension.item.procedures.BakenekoMaskCuriosProcedures;
-import com.ethanlink.swissokyo_extension.item.procedures.KitsuneMaskCuriosProcedures;
-
-import net.mcreator.swissokyoaddons.init.SwissokyoAddonsModItems;
-
-import net.mcreator.swissokyoaddons.procedures.ShogunArmsTickEventProcedure;
-import net.mcreator.swissokyoaddons.procedures.OniHelmetTickEventProcedure;
 
 public class SwissokyoExtensionCuriosCompat {
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {

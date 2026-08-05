@@ -32,25 +32,9 @@ public class SwissokyoExtensionCreativeTabs {
                     output.accept(SwissokyoExtensionItems.TOUR_KNIFE);
                     output.accept(SwissokyoExtensionItems.TRUE_KNIFE);
                     output.accept(SwissokyoExtensionItems.ZIRCON_KNIFE);
-                })
-                .build());
-    public static final Supplier<CreativeModeTab> SWISSOKYO_RESSOURCES = CREATIVE_MODE_TAB.register("swissokyo_extension_ressources_tab",
-        () -> CreativeModeTab.builder().icon(() -> new ItemStack(SwissokyoExtensionItems.MAKAI_INGOT.get()))
-                .title(Component.translatable("creativetab.swissokyo_extension.ressources_tab"))
-                .displayItems((ItemDisplayParameters, output) -> {
                     output.accept(SwissokyoExtensionItems.MAKAI_INGOT);
-                    output.accept(SwissokyoExtensionItems.COIN);
                 })
                 .build());
-    public static final Supplier<CreativeModeTab> SWISSOKYO_BLOCKS = CREATIVE_MODE_TAB.register("swissokyo_extension_blocks_tab",
-        () -> CreativeModeTab.builder().icon(() -> new ItemStack(SwissokyoExtensionItems.SCAREMAKAI.get()))
-                .title(Component.translatable("creativetab.swissokyo_extension.blocks_tab"))
-                .displayItems((ItemDisplayParameters, output) -> {
-                    output.accept(SwissokyoExtensionBlocks.SCAREMAKAI);
-                    output.accept(SwissokyoExtensionBlocks.DONATION_BOX);
-                })
-                .build());
-
         public static void register(IEventBus eventBus){
             CREATIVE_MODE_TAB.register(eventBus);
         }

@@ -4,7 +4,7 @@ license="Not specified"
 
 [[mods]]
 modId="swissokyo_extension"
-version="1.0"
+version="V1"
 displayName="Swissokyo Extension"
 #logoFile="examplemod.png"
 authors="EthanLink"
@@ -33,20 +33,6 @@ description="Swissokyo Extension for Swissokyo Addons"
 
 [[dependencies.swissokyo_extension]]
     modId="curios"
-    type="required"
-    versionRange="[0,)"
-    ordering="AFTER"
-    side="BOTH"
-
-[[dependencies.swissokyo_extension]]
-    modId="caelus"
-    type="required"
-    versionRange="[0,)"
-    ordering="AFTER"
-    side="BOTH"
-
-    [[dependencies.swissokyo_extension]]
-    modId="elytraslot"
     type="required"
     versionRange="[0,)"
     ordering="AFTER"

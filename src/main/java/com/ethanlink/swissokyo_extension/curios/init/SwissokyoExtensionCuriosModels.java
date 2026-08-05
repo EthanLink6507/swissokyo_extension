@@ -9,7 +9,7 @@ import com.ethanlink.swissokyo_extension.curios.model.Modelbakenekomask;
 import net.neoforged.api.distmarker.Dist;
 
 @EventBusSubscriber(Dist.CLIENT)
-public class SwissokyoExtensionModels {
+public class SwissokyoExtensionCuriosModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelbakenekomask.LAYER_LOCATION, Modelbakenekomask::createBodyLayer);
