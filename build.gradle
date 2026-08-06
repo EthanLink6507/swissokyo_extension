@@ -123,9 +123,7 @@ configurations {
 dependencies {
     compileOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}:api"
     runtimeOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}"
-    compileOnly "com.illusivesoulworks.caelus:caelus-neoforge:7.0.1+1.21.1:api"
-    runtimeOnly "com.illusivesoulworks.caelus:caelus-neoforge:7.0.1+1.21.1"
-    implementation files('libs/SWISSOKYO_ADDONS_V2.jar')
+    implementation files('libs/SWISSOKYO_ADDONS_V2.5.jar')
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

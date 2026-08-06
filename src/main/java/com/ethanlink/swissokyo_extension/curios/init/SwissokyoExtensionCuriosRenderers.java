@@ -1,6 +1,7 @@
 package com.ethanlink.swissokyo_extension.curios.init;
 
 import com.ethanlink.swissokyo_extension.curios.renderer.BakenekoMaskCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.FossilWingsCuriosRenderer;
 import com.ethanlink.swissokyo_extension.curios.renderer.KitsuneMaskCuriosRenderer;
 import com.ethanlink.swissokyo_extension.curios.renderer.MakaiWingsCuriosRenderer;
 import com.ethanlink.swissokyo_extension.curios.renderer.OniMaskCuriosRenderer;
@@ -21,5 +22,6 @@ public class SwissokyoExtensionCuriosRenderers {
 		CuriosRendererRegistry.register(SwissokyoAddonsModItems.KDC_HELMET.get(), KitsuneMaskCuriosRenderer::new);
 		CuriosRendererRegistry.register(SwissokyoAddonsModItems.ONI_HELMET.get(), OniMaskCuriosRenderer::new);
 		CuriosRendererRegistry.register(SwissokyoAddonsModItems.SHOGUN_SET_LEGGINGS.get(), ShogunArmsCuriosRenderer::new);
+		CuriosRendererRegistry.register(SwissokyoAddonsModItems.FOSSIL_WINGS_CHESTPLATE.get(), FossilWingsCuriosRenderer::new);
 	}
 }

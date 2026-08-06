@@ -4,7 +4,7 @@ license="Not specified"
 
 [[mods]]
 modId="swissokyo_extension"
-version="V1"
+version="1.0.0"
 displayName="Swissokyo Extension"
 #logoFile="examplemod.png"
 authors="EthanLink"

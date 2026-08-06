@@ -89,5 +89,13 @@ public class SwissokyoExtensionCuriosCompat {
 			}
 		}, 
 		SwissokyoAddonsModItems.SHOGUN_SET_LEGGINGS.get());
+
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+		}, 
+		SwissokyoAddonsModItems.FOSSIL_WINGS_CHESTPLATE.get());
 	}
 }
