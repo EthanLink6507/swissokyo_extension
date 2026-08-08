@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/handheld",
+    "textures": {
+        "layer0" : "swissokyo_extension:item/fossil_knife"
+    }
+}

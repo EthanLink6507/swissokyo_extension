@@ -11,7 +11,7 @@ import com.ethanlink.swissokyo_extension.curios.init.SwissokyoExtensionCuriosCom
 import com.ethanlink.swissokyo_extension.curios.init.SwissokyoExtensionCuriosRenderers;
 import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionCreativeTabs;
 import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionItems;
-
+import com.ethanlink.swissokyo_extension.loot.SwissokyoExtensionLootTableModifiers;
 import com.mojang.logging.LogUtils;
 import it.unimi.dsi.fastutil.ints.IntObjectImmutablePair;
 import it.unimi.dsi.fastutil.ints.IntObjectPair;
@@ -44,6 +44,7 @@ public class SwissokyoExtension {
 		}
 		SwissokyoExtensionCreativeTabs.register(modEventBus);
         SwissokyoExtensionItems.ITEMS.register(modEventBus);
+		SwissokyoExtensionLootTableModifiers.LOOT_MODIFIER_SERIALISERS.register(modEventBus);
     }
 
 	@SubscribeEvent

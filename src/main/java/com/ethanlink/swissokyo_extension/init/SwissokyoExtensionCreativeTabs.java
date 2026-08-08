@@ -4,6 +4,7 @@ import java.util.function.Supplier;
 
 import com.ethanlink.swissokyo_extension.SwissokyoExtension;
 
+import net.mcreator.swissokyoaddons.init.SwissokyoAddonsModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -32,7 +33,17 @@ public class SwissokyoExtensionCreativeTabs {
                     output.accept(SwissokyoExtensionItems.TOUR_KNIFE);
                     output.accept(SwissokyoExtensionItems.TRUE_KNIFE);
                     output.accept(SwissokyoExtensionItems.ZIRCON_KNIFE);
+                    output.accept(SwissokyoExtensionItems.FOSSIL_KNIFE);
                     output.accept(SwissokyoExtensionItems.MAKAI_INGOT);
+                    
+                    output.accept(SwissokyoAddonsModItems.KDC_HELMET);
+                    output.accept(SwissokyoAddonsModItems.BNK_HELMET);
+                    output.accept(SwissokyoAddonsModItems.ONI_HELMET);
+                    output.accept(SwissokyoAddonsModItems.SHOGUN_SET_LEGGINGS);
+                    output.accept(SwissokyoAddonsModItems.SKS_ARMOR_HELMET);
+                    output.accept(SwissokyoAddonsModItems.SKS_ARMOR_LEGGINGS);
+                    output.accept(SwissokyoAddonsModItems.MAKAI_WINGS_CHESTPLATE);
+                    output.accept(SwissokyoAddonsModItems.FOSSIL_WINGS_CHESTPLATE);
                 })
                 .build());
         public static void register(IEventBus eventBus){

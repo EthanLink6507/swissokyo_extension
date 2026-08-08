@@ -444,4 +444,36 @@ public class SwissokyoExtensionToolTiers {
 			return Ingredient.of(SwissokyoExtensionItems.MAKAI_INGOT);
 		}
 	};
+
+	public static final Tier FOSSIL_KNIFE_TIER = new Tier() {
+		@Override
+		public int getUses() {
+			return 5942;
+		}
+
+		@Override
+		public float getSpeed() {
+			return 4f;
+		}
+
+		@Override
+		public float getAttackDamageBonus() {
+			return 0;
+		}
+
+		@Override
+		public TagKey<Block> getIncorrectBlocksForDrops() {
+			return BlockTags.INCORRECT_FOR_WOODEN_TOOL;
+		}
+
+		@Override
+		public int getEnchantmentValue() {
+			return 10;
+		}
+
+		@Override
+		public Ingredient getRepairIngredient() {
+			return Ingredient.of(SwissokyoAddonsModItems.HARAKIRYO_WING);
+		}
+	};
 }

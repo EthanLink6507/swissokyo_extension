@@ -1,0 +1,14 @@
+{
+  "type": "swissokyo_extension:replace_item",
+  "chance": 0.10000000149011612,
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:gameplay/fishing"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "swissokyo_addons:black_pearl"
+  }
+}

@@ -3,11 +3,14 @@ package com.ethanlink.swissokyo_extension.init;
 import com.ethanlink.swissokyo_extension.SwissokyoExtension;
 import com.ethanlink.swissokyo_extension.item.BismuthKnifeItem;
 import com.ethanlink.swissokyo_extension.item.CoreKnifeItem;
+import com.ethanlink.swissokyo_extension.item.FlandreSpearItem;
+import com.ethanlink.swissokyo_extension.item.FossilKnifeItem;
 import com.ethanlink.swissokyo_extension.item.GarnKnifeItem;
 import com.ethanlink.swissokyo_extension.item.JaajKnifeItem;
 import com.ethanlink.swissokyo_extension.item.MakaiIngotItem;
 import com.ethanlink.swissokyo_extension.item.MakaiKnifeItem;
 import com.ethanlink.swissokyo_extension.item.MalachKnifeItem;
+import com.ethanlink.swissokyo_extension.item.RemiliaSpearItem;
 import com.ethanlink.swissokyo_extension.item.ReptileKnifeItem;
 import com.ethanlink.swissokyo_extension.item.RoyaleKnifeItem;
 import com.ethanlink.swissokyo_extension.item.SaphireKnifeItem;
@@ -35,7 +38,10 @@ public class SwissokyoExtensionItems {
 	public static final DeferredItem<Item> TOUR_KNIFE;
 	public static final DeferredItem<Item> TRUE_KNIFE;
 	public static final DeferredItem<Item> ZIRCON_KNIFE;
+	public static final DeferredItem<Item> REMILIA_SPEAR;
+	public static final DeferredItem<Item> FLANDRE_SPEAR;
 	public static final DeferredItem<Item> MAKAI_INGOT;
+	public static final DeferredItem<Item> FOSSIL_KNIFE;
 
 	static {
 		BISMUTH_KNIFE = ITEMS.register("bismuth_knife", BismuthKnifeItem::new);
@@ -51,6 +57,9 @@ public class SwissokyoExtensionItems {
 		TOUR_KNIFE = ITEMS.register("tour_knife", TourKnifeItem::new);
 		TRUE_KNIFE = ITEMS.register("true_knife", TrueKnifeItem::new);
 		ZIRCON_KNIFE = ITEMS.register("zircon_knife", ZirconKnifeItem::new);
+		REMILIA_SPEAR = ITEMS.register("remilia_spear", RemiliaSpearItem::new);
+		FLANDRE_SPEAR = ITEMS.register("flandre_spear", FlandreSpearItem::new);
 		MAKAI_INGOT = ITEMS.register("makai_ingot", MakaiIngotItem::new);
+		FOSSIL_KNIFE = ITEMS.register("fossil_knife", FossilKnifeItem::new);
 		}
 }
