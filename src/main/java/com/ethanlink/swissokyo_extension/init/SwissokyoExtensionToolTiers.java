@@ -3,10 +3,10 @@ package com.ethanlink.swissokyo_extension.init;
 import net.mcreator.swissokyoaddons.init.SwissokyoAddonsModItems;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.item.Items;
 
 public class SwissokyoExtensionToolTiers {
 	public static final Tier BISMUTH_KNIFE_TIER = new Tier() {
@@ -285,7 +285,7 @@ public class SwissokyoExtensionToolTiers {
 
 		@Override
 		public Ingredient getRepairIngredient() {
-			return Ingredient.of(SwissokyoAddonsModItems.SAPHIRE_CRYSTAL);
+			return Ingredient.of(SwissokyoAddonsModItems.SAPHIRE);
 		}
 	};
 	public static final Tier SWISS_KNIFE_TIER = new Tier() {
@@ -316,7 +316,7 @@ public class SwissokyoExtensionToolTiers {
 
 		@Override
 		public Ingredient getRepairIngredient() {
-			return Ingredient.of(SwissokyoAddonsModItems.SWISSIUM);
+			return Ingredient.of(SwissokyoAddonsModItems.SWISSSHARD);
 		}
 	};
 	public static final Tier TOURMALINE_KNIFE_TIER = new Tier() {

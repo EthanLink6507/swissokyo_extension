@@ -23,7 +23,7 @@ import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 
 public class BakenekoMaskCuriosRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/bakenekomask.png");
+	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_addons:textures/entities/bakenekomask.png");
 	@SuppressWarnings("rawtypes")
   private final HumanoidModel humanoidModel;
 

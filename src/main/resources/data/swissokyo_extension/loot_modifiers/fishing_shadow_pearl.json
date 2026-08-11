@@ -1,6 +1,5 @@
 {
   "type": "swissokyo_extension:replace_item",
-  "chance": 0.10000000149011612,
   "conditions": [
     {
       "condition": "neoforge:loot_table_id",
@@ -9,6 +8,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "swissokyo_addons:black_pearl"
+    "id": "swissokyo_addons:shadow_pearl"
   }
 }

@@ -1,6 +1,7 @@
- {
+{
     "replace": false,
     "entries": [
-        "swissokyo_extension:fishing_pearl"
+        "swissokyo_extension:fishing_pearl",
+        "swissokyo_extension:fishing_shadow_pearl"
     ]
 }

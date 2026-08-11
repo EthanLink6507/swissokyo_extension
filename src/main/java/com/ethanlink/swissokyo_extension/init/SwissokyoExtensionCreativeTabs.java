@@ -20,6 +20,7 @@ public class SwissokyoExtensionCreativeTabs {
         () -> CreativeModeTab.builder().icon(() -> new ItemStack(SwissokyoExtensionItems.SWISS_KNIFE.get()))
                 .title(Component.translatable("creativetab.swissokyo_extension.tools_tab"))
                 .displayItems((ItemDisplayParameters, output) -> {
+                    output.accept(SwissokyoExtensionItems.MAKAI_INGOT);
                     output.accept(SwissokyoExtensionItems.BISMUTH_KNIFE);
                     output.accept(SwissokyoExtensionItems.CORE_KNIFE);
                     output.accept(SwissokyoExtensionItems.GARN_KNIFE);
@@ -34,8 +35,6 @@ public class SwissokyoExtensionCreativeTabs {
                     output.accept(SwissokyoExtensionItems.TRUE_KNIFE);
                     output.accept(SwissokyoExtensionItems.ZIRCON_KNIFE);
                     output.accept(SwissokyoExtensionItems.FOSSIL_KNIFE);
-                    output.accept(SwissokyoExtensionItems.MAKAI_INGOT);
-                    
                     output.accept(SwissokyoAddonsModItems.KDC_HELMET);
                     output.accept(SwissokyoAddonsModItems.BNK_HELMET);
                     output.accept(SwissokyoAddonsModItems.ONI_HELMET);

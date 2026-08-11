@@ -23,7 +23,7 @@ import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 
 public class KitsuneMaskCuriosRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/kdc.png");
+	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_addons:textures/entities/kdc.png");
 	@SuppressWarnings("rawtypes")
   private final HumanoidModel humanoidModel;
 
@@ -32,8 +32,8 @@ public class KitsuneMaskCuriosRenderer implements ICurioRenderer {
         ModelKDC model = new ModelKDC(Minecraft.getInstance().getEntityModels().bakeLayer(ModelKDC.LAYER_LOCATION));
         this.humanoidModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of(
             "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-                "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-                "body", model.body,
+                "head", model.body,
+                "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
                 "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()),

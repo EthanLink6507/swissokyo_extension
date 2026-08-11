@@ -11,5 +11,6 @@
   },
   "result": {
     "id": "sophisticatedbackpacks:stack_upgrade_tier_4"
-  }
+  },
+  "replace": true
 }

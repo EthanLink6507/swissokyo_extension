@@ -23,7 +23,7 @@ import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 
 public class ShogunArmsCuriosRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/shogun_arms.png");
+	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_addons:textures/entities/shogun_arms.png");
 	@SuppressWarnings("rawtypes")
   private final HumanoidModel humanoidModel;
 

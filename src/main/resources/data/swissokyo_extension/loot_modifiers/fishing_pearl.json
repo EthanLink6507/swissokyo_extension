@@ -1,6 +1,5 @@
 {
   "type": "swissokyo_extension:replace_item",
-  "chance": 0.10000000149011612,
   "conditions": [
     {
       "condition": "neoforge:loot_table_id",

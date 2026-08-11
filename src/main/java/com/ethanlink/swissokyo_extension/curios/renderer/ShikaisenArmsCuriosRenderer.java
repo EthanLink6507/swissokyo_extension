@@ -25,7 +25,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class ShikaisenArmsCuriosRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_extension:textures/entities/shikaisenarms.png");
+	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_addons:textures/entities/shikaisenarms.png");
 	@SuppressWarnings("rawtypes")
 	private final HumanoidModel humanoidModel;
 
