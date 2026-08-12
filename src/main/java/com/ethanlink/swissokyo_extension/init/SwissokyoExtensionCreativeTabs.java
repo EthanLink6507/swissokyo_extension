@@ -38,11 +38,11 @@ public class SwissokyoExtensionCreativeTabs {
                     output.accept(SwissokyoAddonsModItems.KDC_HELMET);
                     output.accept(SwissokyoAddonsModItems.BNK_HELMET);
                     output.accept(SwissokyoAddonsModItems.ONI_HELMET);
+                    output.accept(SwissokyoAddonsModItems.MAKAI_WINGS_CHESTPLATE);
+                    output.accept(SwissokyoAddonsModItems.FOSSIL_WINGS_CHESTPLATE);
                     output.accept(SwissokyoAddonsModItems.SHOGUN_SET_LEGGINGS);
                     output.accept(SwissokyoAddonsModItems.SKS_ARMOR_HELMET);
                     output.accept(SwissokyoAddonsModItems.SKS_ARMOR_LEGGINGS);
-                    output.accept(SwissokyoAddonsModItems.MAKAI_WINGS_CHESTPLATE);
-                    output.accept(SwissokyoAddonsModItems.FOSSIL_WINGS_CHESTPLATE);
                 })
                 .build());
         public static void register(IEventBus eventBus){
