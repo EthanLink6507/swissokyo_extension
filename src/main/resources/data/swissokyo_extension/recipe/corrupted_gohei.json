@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  b",
+    " ac",
+    "a c"
+  ],
+  "key": {
+    "a": {
+        "item": "swissokyo_addons:netheriterod"
+    },
+    "b": {
+        "item": "swissokyo_extension:makai_ingot"
+    },
+    "c": {
+        "item": "swissokyo_addons:refined_talisman"
+    }
+},
+  "result": {
+    "id": "swissokyo_extension:corrupted_gohei"
+    }
+}

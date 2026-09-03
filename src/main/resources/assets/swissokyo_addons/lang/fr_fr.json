@@ -1,7 +1,7 @@
 {
   "block.swissokyo_addons.zircon_ore": "Minerai de Zircon",
   "item.swissokyo_addons.malach_pickaxe": "Pioche en Malachite",
-  "block.swissokyo_addons.tour_ore": "Minerai de Malachite des abîmes",
+  "block.swissokyo_addons.tour_ore": "Minerai de Tourmaline des abîmes",
   "item.swissokyo_addons.pearl": "Perle",
   "item.swissokyo_addons.corsair_armor_boots": "Bottes de Corsaire",
   "item.swissokyo_addons.jaaj_sword": "Épée en Jade",
@@ -19,7 +19,7 @@
   "effect.swissokyo_addons.drugged": "Drogué",
   "item.swissokyo_addons.cannabisleaf": "Feuille de cannabis",
   "item.swissokyo_addons.reptile_meat": "Viande de Reptile",
-  "item.swissokyo_addons.winebottle": "Bouteille de vin",
+  "item.swissokyo_addons.winebottle": "Grande Bouteille",
   "item.swissokyo_addons.shinaiawing": "Fragment d'aile de Makai",
   "item.swissokyo_addons.tour_armor_helmet": "Casque en Tourmaline",
   "item.swissokyo_addons.crusader_armor_leggings": "Jambière de Croisé",
@@ -194,9 +194,11 @@
   "item.swissokyo_addons.fossil_hoe" : "Houe en Fossile",
   "item.swissokyo_addons.fossil_sword" : "Épée en Fossile",
   "item.swissokyo_addons.ada_bedrock_ore" : "Minerai d'adamantite",
-  "item.swissokyo_addons.adamantite" : "Adamantite",
+  "item.swissokyo_addons.adamantite" : "Adamantite raffiné",
   "item.swissokyo_addons.adamantite_crystal" : "Cristal d'adamantite",
   "item.swissokyo_addons.adamantite_gem" : "Gemme d'adamantite",
   "item.swissokyo_addons.dark_adamantite" : "Adamantite sombre",
-  "item.swissokyo_addons.dark_adamantite_sword" : "Épée en Adamantite Sombre"
+  "item.swissokyo_addons.dark_adamantite_sword" : "Épée en Adamantite Sombre",
+  "item.swissokyo_addons.ada_bredrock_ore" : "Minerai d'Adamantite",
+  "block.swissokyo_addons.saltcane_tall" : "Canne à sel"
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:cooked_beef"
+    },
+    "b": {
+      "tag": "c:foods/milk"
+    }
+  },
+  "result": {
+    "id": "swissokyo_addons:steakdelait",
+    "count": 8
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:book"
+  },
+  "base": {
+    "item": "minecraft:experience_bottle"
+  },
+  "addition": {
+    "item": "minecraft:emerald_block"
+  },
+  "result": {
+    "id": "minecraft:enchanted_book",
+    "components": {
+    	"minecraft:stored_enchantments": {
+    		"levels": {
+    			"swissokyo_extension:bleeding": 1
+    		}
+    	}
+    }
+  }
+}

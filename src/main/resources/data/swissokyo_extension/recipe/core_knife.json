@@ -5,12 +5,16 @@
     "m": {
       "item": "minecraft:heavy_core"
     },
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
     "s": {
       "item": "minecraft:breeze_rod"
     }
   },
   "pattern": [
     "m",
+    "a",
     "s"
   ],
   "result": {

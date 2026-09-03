@@ -1,0 +1,204 @@
+{
+    "parent": "swissokyo_extension:swissokyo_extension",
+  "criteria": {
+    "bismuth_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:bismuth_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "core_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:core_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "garn_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:garn_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "jaaj_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:jaaj_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "makai_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:makai_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "malach_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:malach_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "reptile_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:reptile_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "saphire_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:saphire_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "swiss_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:swiss_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "tour_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:tour_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "zircon_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:zircon_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "fossil_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:fossil_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "dark_adamantite_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:dark_adamantite_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "royale_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:royale_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+    "display": {
+        "background": "touhou_little_maid:textures/advancements/backgrounds/stone.png",
+    "description": {
+        "translate": "advancements.swissokyo_extension.all_knife.description"
+    },
+    "icon": {
+        "count": 1,
+        "id": "swissokyo_extension:bismuth_knife"
+    },
+    "title": {
+        "translate": "advancements.swissokyo_extension.all_knife.title"
+    },
+    "frame": "goal",
+    "hidden": false
+    },
+    "requirements": [
+    [
+        "bismuth_knife"
+    ],
+    [
+        "core_knife"
+    ],
+    [
+        "garn_knife"
+    ],
+    [
+        "jaaj_knife"
+    ],
+    [
+        "makai_knife"
+    ],
+    [
+        "malach_knife"
+    ],
+    [
+        "reptile_knife"
+    ],
+    [
+        "royale_knife"
+    ],
+    [
+        "saphire_knife"
+    ],
+    [
+        "swiss_knife"
+    ],
+    [
+        "tour_knife"
+    ],
+    [
+        "zircon_knife"
+    ],
+    [
+        "fossil_knife"
+    ],
+    [
+        "dark_adamantite_knife"
+    ]
+    ]
+}

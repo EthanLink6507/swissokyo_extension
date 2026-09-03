@@ -1,13 +1,13 @@
 package com.ethanlink.swissokyo_extension.curios.init;
 
-import com.ethanlink.swissokyo_extension.curios.renderer.BakenekoMaskCuriosRenderer;
-import com.ethanlink.swissokyo_extension.curios.renderer.FossilWingsCuriosRenderer;
-import com.ethanlink.swissokyo_extension.curios.renderer.KitsuneMaskCuriosRenderer;
-import com.ethanlink.swissokyo_extension.curios.renderer.MakaiWingsCuriosRenderer;
-import com.ethanlink.swissokyo_extension.curios.renderer.OniMaskCuriosRenderer;
-import com.ethanlink.swissokyo_extension.curios.renderer.ShikaisenArmsCuriosRenderer;
-import com.ethanlink.swissokyo_extension.curios.renderer.ShikaisenPinsCuriosRenderer;
-import com.ethanlink.swissokyo_extension.curios.renderer.ShogunArmsCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.swissokyo_addons.BakenekoMaskCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.swissokyo_addons.FossilWingsCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.swissokyo_addons.KitsuneMaskCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.swissokyo_addons.MakaiWingsCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.swissokyo_addons.OniMaskCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.swissokyo_addons.ShikaisenArmsCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.swissokyo_addons.ShikaisenPinsCuriosRenderer;
+import com.ethanlink.swissokyo_extension.curios.renderer.swissokyo_addons.ShogunArmsCuriosRenderer;
 
 import net.mcreator.swissokyoaddons.init.SwissokyoAddonsModItems;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;

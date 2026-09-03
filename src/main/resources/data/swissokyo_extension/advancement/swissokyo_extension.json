@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "0": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "touhou_little_maid:textures/advancements/backgrounds/stone.png",
+    "description": {
+      "translate": "advancements.swissokyo_extension.swissokyo_extension.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "swissokyo_extension:swiss_knife"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.swissokyo_extension.swissokyo_extension.title"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "0"
+    ]
+  ]
+}

@@ -1,0 +1,35 @@
+{
+    "parent": "swissokyo_extension:all_knife",
+  "criteria": {
+    "true_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:true_knife"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+    "display": {
+        "background": "touhou_little_maid:textures/advancements/backgrounds/stone.png",
+    "description": {
+        "translate": "advancements.swissokyo_extension.true_knife.description"
+    },
+    "icon": {
+        "count": 1,
+        "id": "swissokyo_extension:true_knife"
+    },
+    "title": {
+        "translate": "advancements.swissokyo_extension.true_knife.title"
+    },
+    "frame": "challenge",
+    "hidden": true
+    },
+    "requirements": [
+    [
+        "true_knife"
+    ]
+    ]
+}

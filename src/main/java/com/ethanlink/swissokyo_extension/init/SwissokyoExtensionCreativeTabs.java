@@ -35,6 +35,7 @@ public class SwissokyoExtensionCreativeTabs {
                     output.accept(SwissokyoExtensionItems.TRUE_KNIFE);
                     output.accept(SwissokyoExtensionItems.ZIRCON_KNIFE);
                     output.accept(SwissokyoExtensionItems.FOSSIL_KNIFE);
+                    output.accept(SwissokyoExtensionItems.ADAMANTITE_KNIFE);
                     output.accept(SwissokyoAddonsModItems.KDC_HELMET);
                     output.accept(SwissokyoAddonsModItems.BNK_HELMET);
                     output.accept(SwissokyoAddonsModItems.ONI_HELMET);

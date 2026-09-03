@@ -4,7 +4,7 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
-import com.ethanlink.swissokyo_extension.curios.model.Modelbakenekomask;
+import com.ethanlink.swissokyo_extension.curios.model.swissokyo_addons.Modelbakenekomask;
 
 import net.neoforged.api.distmarker.Dist;
 

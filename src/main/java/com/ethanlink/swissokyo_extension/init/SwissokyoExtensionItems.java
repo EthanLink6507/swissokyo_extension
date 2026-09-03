@@ -3,13 +3,18 @@ package com.ethanlink.swissokyo_extension.init;
 import com.ethanlink.swissokyo_extension.SwissokyoExtension;
 import com.ethanlink.swissokyo_extension.item.BismuthKnifeItem;
 import com.ethanlink.swissokyo_extension.item.CoreKnifeItem;
+import com.ethanlink.swissokyo_extension.item.CorruptedGohei;
+import com.ethanlink.swissokyo_extension.item.DarkAdamantiteKnifeItem;
 import com.ethanlink.swissokyo_extension.item.FlandreSpearItem;
+import com.ethanlink.swissokyo_extension.item.FossilIngotItem;
 import com.ethanlink.swissokyo_extension.item.FossilKnifeItem;
+import com.ethanlink.swissokyo_extension.item.FossilizedGohei;
 import com.ethanlink.swissokyo_extension.item.GarnKnifeItem;
 import com.ethanlink.swissokyo_extension.item.JaajKnifeItem;
 import com.ethanlink.swissokyo_extension.item.MakaiIngotItem;
 import com.ethanlink.swissokyo_extension.item.MakaiKnifeItem;
 import com.ethanlink.swissokyo_extension.item.MalachKnifeItem;
+import com.ethanlink.swissokyo_extension.item.PoustonIcon;
 import com.ethanlink.swissokyo_extension.item.RemiliaSpearItem;
 import com.ethanlink.swissokyo_extension.item.ReptileKnifeItem;
 import com.ethanlink.swissokyo_extension.item.RoyaleKnifeItem;
@@ -42,6 +47,11 @@ public class SwissokyoExtensionItems {
 	public static final DeferredItem<Item> FLANDRE_SPEAR;
 	public static final DeferredItem<Item> MAKAI_INGOT;
 	public static final DeferredItem<Item> FOSSIL_KNIFE;
+	public static final DeferredItem<Item> ADAMANTITE_KNIFE;
+	public static final DeferredItem<Item> CORRUPTED_GOHEI;
+	public static final DeferredItem<Item> FOSSILIZED_GOHEI;
+	public static final DeferredItem<Item> FOSSIL_INGOT;
+	public static final DeferredItem<Item> POUSTON_ICON;
 
 	static {
 		BISMUTH_KNIFE = ITEMS.register("bismuth_knife", BismuthKnifeItem::new);
@@ -61,5 +71,10 @@ public class SwissokyoExtensionItems {
 		FLANDRE_SPEAR = ITEMS.register("flandre_spear", FlandreSpearItem::new);
 		MAKAI_INGOT = ITEMS.register("makai_ingot", MakaiIngotItem::new);
 		FOSSIL_KNIFE = ITEMS.register("fossil_knife", FossilKnifeItem::new);
+		ADAMANTITE_KNIFE = ITEMS.register("dark_adamantite_knife", DarkAdamantiteKnifeItem::new);
+		CORRUPTED_GOHEI = ITEMS.register("corrupted_gohei", CorruptedGohei::new);
+		FOSSILIZED_GOHEI = ITEMS.register("fossilized_gohei", FossilizedGohei::new);
+		FOSSIL_INGOT = ITEMS.register("fossil_ingot", FossilIngotItem::new);
+		POUSTON_ICON = ITEMS.register("pouston_icon", PoustonIcon::new);
 		}
 }

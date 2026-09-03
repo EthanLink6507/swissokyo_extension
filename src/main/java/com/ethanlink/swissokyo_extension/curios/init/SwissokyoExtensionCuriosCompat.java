@@ -1,7 +1,7 @@
 package com.ethanlink.swissokyo_extension.curios.init;
 
-import com.ethanlink.swissokyo_extension.item.procedures.BakenekoMaskCuriosProcedures;
-import com.ethanlink.swissokyo_extension.item.procedures.KitsuneMaskCuriosProcedures;
+import com.ethanlink.swissokyo_extension.curios.procedures.BakenekoMaskCuriosProcedures;
+import com.ethanlink.swissokyo_extension.curios.procedures.KitsuneMaskCuriosProcedures;
 
 import net.mcreator.swissokyoaddons.init.SwissokyoAddonsModItems;
 import net.mcreator.swissokyoaddons.procedures.OniHelmetTickEventProcedure;
