@@ -1,6 +1,21 @@
 {
-  "parent": "minecraft:item/handheld",
-    "textures": {
+  "base": {
+    "parent": "swissokyo_extension:item/fossilized_gohei_in_hand"
+  },
+  "gui_light": "front",
+  "loader": "neoforge:separate_transforms",
+  "perspectives": {
+    "fixed": {
+      "parent": "minecraft:item/generated",
+      "textures": {
         "layer0": "swissokyo_extension:item/fossilized_gohei"
+      }
+    },
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "swissokyo_extension:item/fossilized_gohei"
+      }
     }
+  }
 }

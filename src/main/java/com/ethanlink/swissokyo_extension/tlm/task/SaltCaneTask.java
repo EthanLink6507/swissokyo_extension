@@ -2,17 +2,14 @@ package com.ethanlink.swissokyo_extension.tlm.task;
 
 
 import com.ethanlink.swissokyo_extension.SwissokyoExtension;
-
 import com.github.tartaricacid.touhoulittlemaid.api.task.IFarmTask;
 import com.github.tartaricacid.touhoulittlemaid.entity.passive.EntityMaid;
 
 import net.mcreator.swissokyoaddons.init.SwissokyoAddonsModBlocks;
 import net.mcreator.swissokyoaddons.init.SwissokyoAddonsModItems;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -48,11 +45,6 @@ public class SaltCaneTask implements IFarmTask {
 
     @Override
     public boolean canPlant(EntityMaid maid, BlockPos basePos, BlockState baseState, ItemStack seed) {
-        Level world = maid.level();
-        BlockPos cropPos = basePos.above();
-        if (!world.getBlockState(cropPos).canBeReplaced()) {
-            return false;
-        }
         return canSustainSaltCane(baseState);
     }
 
@@ -70,7 +62,7 @@ public class SaltCaneTask implements IFarmTask {
     }
 
     private boolean canSustainSaltCane(BlockState state) {
-        return state.is(Blocks.DIRT) || state.is(Blocks.GRASS_BLOCK)|| state.is(Blocks.PODZOL);
+        return state.is(Blocks.PODZOL);
     }
 
     @Override

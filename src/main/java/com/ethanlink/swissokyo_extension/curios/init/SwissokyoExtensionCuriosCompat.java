@@ -1,9 +1,9 @@
 package com.ethanlink.swissokyo_extension.curios.init;
 
-import com.ethanlink.swissokyo_extension.curios.procedures.BakenekoMaskCuriosProcedures;
 import com.ethanlink.swissokyo_extension.curios.procedures.KitsuneMaskCuriosProcedures;
 
 import net.mcreator.swissokyoaddons.init.SwissokyoAddonsModItems;
+import net.mcreator.swissokyoaddons.procedures.BNKHelmetTickEventProcedure;
 import net.mcreator.swissokyoaddons.procedures.OniHelmetTickEventProcedure;
 import net.mcreator.swissokyoaddons.procedures.ShogunArmsTickEventProcedure;
 import net.minecraft.world.item.ItemStack;
@@ -49,7 +49,7 @@ public class SwissokyoExtensionCuriosCompat {
 			}
 			@Override
 			public void curioTick(SlotContext slotContext) {
-				BakenekoMaskCuriosProcedures.execute(slotContext.entity());
+				BNKHelmetTickEventProcedure.execute(slotContext.entity());
 			}
 		}, 
 		SwissokyoAddonsModItems.BNK_HELMET.get());
@@ -97,5 +97,13 @@ public class SwissokyoExtensionCuriosCompat {
 			}
 		}, 
 		SwissokyoAddonsModItems.FOSSIL_WINGS_CHESTPLATE.get());
+
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+		}, 
+		SwissokyoAddonsModItems.SHOGUN_SET_HELMET.get());
 	}
 }

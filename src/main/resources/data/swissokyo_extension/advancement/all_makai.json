@@ -1,0 +1,165 @@
+{
+  "parent": "swissokyo_extension:swissokyo_extension",
+  "criteria": {
+    "makai_sunflower": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:makai_sunflower"
+          }
+        ]
+      }
+    },
+    "shinaiawing": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:shinaiawing"
+          }
+        ]
+      }
+    },
+    "makai_wings_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:makai_wings_chestplate"
+          }
+        ]
+      }
+    },
+    "makai_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:makai_pickaxe"
+          }
+        ]
+      }
+    },
+    "makai_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:makai_axe"
+          }
+        ]
+      }
+    },
+    "makai_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:makai_shovel"
+          }
+        ]
+      }
+    },
+    "makai_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:makai_hoe"
+          }
+        ]
+      }
+    },
+    "makai_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:makai_sword"
+          }
+        ]
+      }
+    },
+    "makai_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:makai_ingot"
+          }
+        ]
+      }
+    },
+    "makai_knife": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:makai_knife"
+          }
+        ]
+      }
+    },
+    "blood_spear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:blood_spear"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "background": "touhou_little_maid:textures/advancements/backgrounds/stone.png",
+    "description": {
+      "translate": "advancements.swissokyo_extension.all_makai.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "swissokyo_extension:makai_ingot"
+    },
+    "title": {
+      "translate": "advancements.swissokyo_extension.all_makai.title"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "makai_sunflower"
+    ],
+    [
+      "shinaiawing"
+    ],
+    [
+      "makai_wings_chestplate"
+    ],
+    [
+      "makai_pickaxe"
+    ],
+    [
+      "makai_axe"
+    ],
+    [
+      "makai_shovel"
+    ],
+    [
+      "makai_hoe"
+    ],
+    [
+      "makai_sword"
+    ],
+    [
+      "makai_ingot"
+    ],
+    [
+      "makai_knife"
+    ],
+    [
+      "blood_spear"
+    ]
+  ]
+}

@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.function.Supplier;
 
 import org.slf4j.Logger;
 
@@ -12,6 +13,8 @@ import com.ethanlink.swissokyo_extension.curios.init.SwissokyoExtensionCuriosRen
 import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionCreativeTabs;
 import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionItems;
 import com.mojang.logging.LogUtils;
+import com.mojang.serialization.MapCodec;
+
 import it.unimi.dsi.fastutil.ints.IntObjectImmutablePair;
 import it.unimi.dsi.fastutil.ints.IntObjectPair;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -27,8 +30,11 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.util.thread.SidedThreadGroups;
 import net.neoforged.neoforge.capabilities.EntityCapability;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 @Mod(SwissokyoExtension.MOD_ID)
 public class SwissokyoExtension {

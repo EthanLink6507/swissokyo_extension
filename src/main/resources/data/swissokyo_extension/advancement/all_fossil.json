@@ -1,0 +1,165 @@
+{
+  "parent": "swissokyo_extension:swissokyo_extension",
+  "criteria": {
+    "star_shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:star_shard"
+          }
+        ]
+      }
+    },
+    "harakiryo_wing": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:harakiryo_wing"
+          }
+        ]
+      }
+    },
+    "fossil_wings_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:fossil_wings_chestplate"
+          }
+        ]
+      }
+    },
+    "fossil_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:fossil_pickaxe"
+          }
+        ]
+      }
+    },
+    "fossil_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:fossil_axe"
+          }
+        ]
+      }
+    },
+    "fossil_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:fossil_shovel"
+          }
+        ]
+      }
+    },
+    "fossil_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:fossil_hoe"
+          }
+        ]
+      }
+    },
+    "fossil_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:fossil_sword"
+          }
+        ]
+      }
+    },
+    "fossil_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:fossil_ingot"
+          }
+        ]
+      }
+    },
+    "fossil_knife": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_extension:fossil_knife"
+          }
+        ]
+      }
+    },
+    "star_spear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "swissokyo_addons:star_spear"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "background": "touhou_little_maid:textures/advancements/backgrounds/stone.png",
+    "description": {
+      "translate": "advancements.swissokyo_extension.all_fossil.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "swissokyo_extension:fossil_ingot"
+    },
+    "title": {
+      "translate": "advancements.swissokyo_extension.all_fossil.title"
+    },
+    "frame": "goal",
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "star_shard"
+    ],
+    [
+      "harakiryo_wing"
+    ],
+    [
+      "fossil_wings_chestplate"
+    ],
+    [
+      "fossil_pickaxe"
+    ],
+    [
+      "fossil_axe"
+    ],
+    [
+      "fossil_shovel"
+    ],
+    [
+      "fossil_hoe"
+    ],
+    [
+      "fossil_sword"
+    ],
+    [
+      "fossil_ingot"
+    ],
+    [
+      "fossil_knife"
+    ],
+    [
+      "star_spear"
+    ]
+  ]
+}

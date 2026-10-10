@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "d": {
+      "item": "minecraft:deepslate_tiles"
+    },
+    "o": {
+      "tag": "c:obsidians"
+    }
+  },
+  "pattern": [
+    "dod",
+    "odo",
+    "dod"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:reinforced_deepslate"
+  }
+}

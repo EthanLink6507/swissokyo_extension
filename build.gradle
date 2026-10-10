@@ -143,6 +143,7 @@ dependencies {
     compileOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}:api"
     runtimeOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}"
     implementation files('libs/SwissokyoAddons_V2.6.jar')
+    implementation files('libs/YoukaisHomecoming.jar')
     implementation "maven.modrinth:touhou-little-maid:1.5.2-neoforge+mc1.21.1"
     compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
     runtimeOnly "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"

@@ -21,6 +21,7 @@ public class SwissokyoExtensionCreativeTabs {
                 .title(Component.translatable("creativetab.swissokyo_extension.tools_tab"))
                 .displayItems((ItemDisplayParameters, output) -> {
                     output.accept(SwissokyoExtensionItems.MAKAI_INGOT);
+                    output.accept(SwissokyoExtensionItems.FOSSIL_INGOT);
                     output.accept(SwissokyoExtensionItems.BISMUTH_KNIFE);
                     output.accept(SwissokyoExtensionItems.CORE_KNIFE);
                     output.accept(SwissokyoExtensionItems.GARN_KNIFE);
@@ -36,11 +37,16 @@ public class SwissokyoExtensionCreativeTabs {
                     output.accept(SwissokyoExtensionItems.ZIRCON_KNIFE);
                     output.accept(SwissokyoExtensionItems.FOSSIL_KNIFE);
                     output.accept(SwissokyoExtensionItems.ADAMANTITE_KNIFE);
+                    output.accept(SwissokyoExtensionItems.CORRUPTED_GOHEI);
+                    output.accept(SwissokyoExtensionItems.FOSSILIZED_GOHEI);
+                    
                     output.accept(SwissokyoAddonsModItems.KDC_HELMET);
                     output.accept(SwissokyoAddonsModItems.BNK_HELMET);
                     output.accept(SwissokyoAddonsModItems.ONI_HELMET);
+                    output.accept(SwissokyoAddonsModItems.SKS_ARMOR_LEGGINGS);
                     output.accept(SwissokyoAddonsModItems.MAKAI_WINGS_CHESTPLATE);
                     output.accept(SwissokyoAddonsModItems.FOSSIL_WINGS_CHESTPLATE);
+                    output.accept(SwissokyoAddonsModItems.SHOGUN_SET_HELMET);
                     output.accept(SwissokyoAddonsModItems.SHOGUN_SET_LEGGINGS);
                     output.accept(SwissokyoAddonsModItems.SKS_ARMOR_HELMET);
                     output.accept(SwissokyoAddonsModItems.SKS_ARMOR_LEGGINGS);
@@ -49,5 +55,4 @@ public class SwissokyoExtensionCreativeTabs {
         public static void register(IEventBus eventBus){
             CREATIVE_MODE_TAB.register(eventBus);
         }
-
 }

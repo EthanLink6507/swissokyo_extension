@@ -1,28 +1,26 @@
 package com.ethanlink.swissokyo_extension.curios.renderer.swissokyo_addons;
 
-import top.theillusivec4.curios.api.client.ICurioRenderer;
-import top.theillusivec4.curios.api.SlotContext;
+import java.util.Collections;
+import java.util.Map;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.client.renderer.entity.RenderLayerParent;
-import net.minecraft.client.renderer.entity.ItemRenderer;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.client.model.HumanoidModel;
-import net.minecraft.client.model.EntityModel;
-import net.minecraft.client.Minecraft;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 
 import net.mcreator.swissokyoaddons.client.model.Modelshikaisen_pins;
-
-import java.util.Map;
-import java.util.Collections;
-
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.ItemRenderer;
+import net.minecraft.client.renderer.entity.RenderLayerParent;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
+import top.theillusivec4.curios.api.SlotContext;
+import top.theillusivec4.curios.api.client.ICurioRenderer;
 
 public class ShikaisenPinsCuriosRenderer implements ICurioRenderer {
 	private static final ResourceLocation TEXTURE = ResourceLocation.parse("swissokyo_addons:textures/entities/shikaisenpins.png");
@@ -54,5 +52,4 @@ public class ShikaisenPinsCuriosRenderer implements ICurioRenderer {
 	    VertexConsumer vertexconsumer = ItemRenderer.getArmorFoilBuffer(renderTypeBuffer, RenderType.armorCutoutNoCull(TEXTURE), stack.hasFoil());
 	    this.humanoidModel.renderToBuffer(matrixStack, vertexconsumer, light, OverlayTexture.NO_OVERLAY);
   }
-
 }

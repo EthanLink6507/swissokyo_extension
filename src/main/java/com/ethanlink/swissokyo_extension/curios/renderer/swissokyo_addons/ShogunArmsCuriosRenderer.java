@@ -3,10 +3,10 @@ package com.ethanlink.swissokyo_extension.curios.renderer.swissokyo_addons;
 import java.util.Collections;
 import java.util.Map;
 
-import net.mcreator.swissokyoaddons.client.model.Modelshogun_arms;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 
+import net.mcreator.swissokyoaddons.client.model.Modelshogun_arms;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.HumanoidModel;
@@ -52,5 +52,4 @@ public class ShogunArmsCuriosRenderer implements ICurioRenderer {
       VertexConsumer vertexconsumer = ItemRenderer.getArmorFoilBuffer(renderTypeBuffer, RenderType.armorCutoutNoCull(TEXTURE), stack.hasFoil());
       this.humanoidModel.renderToBuffer(matrixStack, vertexconsumer, light, OverlayTexture.NO_OVERLAY);
   }
-
 }

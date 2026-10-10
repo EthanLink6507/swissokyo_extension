@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionToolTiers;
 
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -17,10 +18,13 @@ public class RemiliaSpearItem extends SwordItem {
 		super(SwissokyoExtensionToolTiers.SPEAR_TIER, new SwordItem.Properties().attributes(SwordItem.createAttributes(SwissokyoExtensionToolTiers.SPEAR_TIER, 8f, -2.9f)).rarity(Rarity.EPIC));
 	}
 
-    @Override
+@Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.translatable("tooltip.swissokyo_extension.remilia_spear"));
+        if(Screen.hasAltDown()) {
         tooltipComponents.add(Component.translatable("tooltip.swissokyo_extension.remilia_spear_joke"));
+        } else {
+        tooltipComponents.add(Component.translatable("tooltip.swissokyo_extension.remilia_spear"));
+        }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

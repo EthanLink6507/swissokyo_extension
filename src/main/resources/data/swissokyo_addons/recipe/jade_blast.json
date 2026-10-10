@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 0.91,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "swissokyo_addons:raw_jaaj_ore"
+  },
+  "result": {
+    "id": "swissokyo_addons:jaaj_ingot"
+  }
+}

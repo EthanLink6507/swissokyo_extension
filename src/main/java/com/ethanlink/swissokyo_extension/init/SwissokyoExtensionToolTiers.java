@@ -12,7 +12,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier BISMUTH_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5942;
+			return 11566;
 		}
 
 		@Override
@@ -43,7 +43,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier CORE_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5942;
+			return 35120;
 		}
 
 		@Override
@@ -74,7 +74,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier GARN_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5002;
+			return 1255;
 		}
 
 		@Override
@@ -105,7 +105,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier JADE_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5002;
+			return 1361;
 		}
 
 		@Override
@@ -136,7 +136,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier MAKAI_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5942;
+			return 5144;
 		}
 
 		@Override
@@ -167,7 +167,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier MALACHITE_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5002;
+			return 1987;
 		}
 
 		@Override
@@ -198,7 +198,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier REPTILE_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5942;
+			return 3161;
 		}
 
 		@Override
@@ -229,7 +229,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier ROYAL_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5942;
+			return 6727;
 		}
 
 		@Override
@@ -260,7 +260,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier SAPHIRE_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5002;
+			return 1915;
 		}
 
 		@Override
@@ -291,7 +291,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier SWISS_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5002;
+			return 2572;
 		}
 
 		@Override
@@ -322,7 +322,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier TOURMALINE_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5002;
+			return 3539;
 		}
 
 		@Override
@@ -353,7 +353,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier ZIRCON_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5002;
+			return 411;
 		}
 
 		@Override
@@ -448,7 +448,7 @@ public class SwissokyoExtensionToolTiers {
 	public static final Tier FOSSIL_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5942;
+			return 5144;
 		}
 
 		@Override
@@ -480,7 +480,7 @@ public class SwissokyoExtensionToolTiers {
 		public static final Tier ADAMANTITE_KNIFE_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 5942;
+			return 5144;
 		}
 
 		@Override
@@ -506,70 +506,6 @@ public class SwissokyoExtensionToolTiers {
 		@Override
 		public Ingredient getRepairIngredient() {
 			return Ingredient.of(SwissokyoAddonsModItems.DARK_ADAMANTITE, SwissokyoAddonsModItems.ADAMANTITE);
-		}
-	};
-
-		public static final Tier MAKAI_GOHEI_TIER = new Tier() {
-		@Override
-		public int getUses() {
-			return 1200;
-		}
-
-		@Override
-		public float getSpeed() {
-			return 4f;
-		}
-
-		@Override
-		public float getAttackDamageBonus() {
-			return 0;
-		}
-
-		@Override
-		public TagKey<Block> getIncorrectBlocksForDrops() {
-			return BlockTags.INCORRECT_FOR_WOODEN_TOOL;
-		}
-
-		@Override
-		public int getEnchantmentValue() {
-			return 10;
-		}
-
-		@Override
-		public Ingredient getRepairIngredient() {
-			return Ingredient.of(SwissokyoExtensionItems.MAKAI_INGOT);
-		}
-	};
-
-		public static final Tier FOSSIL_GOHEI_TIER = new Tier() {
-		@Override
-		public int getUses() {
-			return 1200;
-		}
-
-		@Override
-		public float getSpeed() {
-			return 4f;
-		}
-
-		@Override
-		public float getAttackDamageBonus() {
-			return 0;
-		}
-
-		@Override
-		public TagKey<Block> getIncorrectBlocksForDrops() {
-			return BlockTags.INCORRECT_FOR_WOODEN_TOOL;
-		}
-
-		@Override
-		public int getEnchantmentValue() {
-			return 15;
-		}
-
-		@Override
-		public Ingredient getRepairIngredient() {
-			return Ingredient.of(SwissokyoExtensionItems.FOSSIL_INGOT);
 		}
 	};
 }

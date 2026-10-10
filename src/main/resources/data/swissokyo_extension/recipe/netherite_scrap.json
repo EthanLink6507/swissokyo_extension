@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 2.0,
+  "cookingtime": 200,
+  "ingredient": [
+    {
+      "item": "minecraft:netherite_helmet"
+    },
+    {
+      "item": "minecraft:netherite_chestplate"
+    },
+    {
+      "item": "minecraft:netherite_leggings"
+    },
+    {
+      "item": "minecraft:netherite_boots"
+    },
+    {
+      "item": "minecraft:netherite_shovel"
+    },
+    {
+      "item": "minecraft:netherite_pickaxe"
+    },
+    {
+      "item": "minecraft:netherite_axe"
+    },
+    {
+      "item": "minecraft:netherite_hoe"
+    },
+    {
+      "item": "minecraft:netherite_sword"
+    },
+    {
+      "item": "farmersdelight:netherite_knife"
+    },
+    {
+      "item": "swissokyo_addons:netheriterod"
+    }
+  ],
+  "result": {
+    "id": "minecraft:netherite_scrap"
+  }
+}

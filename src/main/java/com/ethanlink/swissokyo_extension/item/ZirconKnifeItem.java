@@ -1,8 +1,9 @@
 package com.ethanlink.swissokyo_extension.item;
 
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Item;
 import com.ethanlink.swissokyo_extension.init.SwissokyoExtensionToolTiers;
+
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 
 public class ZirconKnifeItem extends SwordItem {
 
